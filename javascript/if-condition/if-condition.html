@@ -1,0 +1,153 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>conditions</title>
+
+     <!-- bootstrap-css--link -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+     <!-- local-css-link -->
+    <link rel="stylesheet" href="if-condition.css">
+</head>
+<body>
+
+<!-- =================================================================== -->
+     <!-- bootstrap-navbar -->
+           <!-- start-bootstrap navbar ========= -->
+           <nav class="navbar navbar-expand-lg bg-success" width: 100%;>
+            <div class="container-fluid">
+      
+              <!-- navbar logo/title/brand -->
+              <a class="navbar-brand" href="#">Logo</a>
+      
+              <!-- hamburger-menu-button -->
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+      
+              <!-- to move hamburger-menu-items to the right side we need to add justify-content-end to collapse navbar.-->
+              <div class="collapse navbar-collapse justify-content-end " id="navbarNav">
+      
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/html-learning/index.html" target="_blank">html-form</a>
+                  </li>
+    
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/html-learning/semantic.html" target="_blank">html-semantic</a>
+                  </li>
+    
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/css learning/css/csslearning.html" target="_blank">css-learning</a>
+                  </li>
+    
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/css learning/flexbox-lessons/flxbox.html" target="_blank">css-flexbox</a>
+                  </li>
+    
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/css learning/media-query/mediaquery.html" target="_blank">mediaquery</a>
+                  </li>
+    
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/css learning/css-grid/grid.html" target="_blank">css-grid</a>
+                  </li>
+    
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/css learning/css-position/position.html" target="_blank">css-position</a>
+                  </li>
+    
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/css learning/bootstrap/bootstrap.html" target="_blank">bootstrap</a>
+                  </li>
+    
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/javascript/js-lessons/javascript-lessons.html" target="_blank">javascript-lessons</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/javascript/if-condition/if-condition.html" target="_blank">if/operation</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/javascript/for-while-loop/for-while-loop.html" target="_blank">for/while loop</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/javascript/array/array.html" target="_blank"> array</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/javascript/function/function.html" target="_blank"> function</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/javascript/object/object.html" target="_blank"> object</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/javascript/DOM/DOM.html" target="_blank">DOM</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/javascript/API/API.html" target="_blank">API</a>
+                  </li>
+    
+    
+                  
+                </ul>
+              </div>
+            </div>
+          </nav>
+            <!-- end-bootstrap navbar ========= -->
+           
+            <!-- start-page-title -->
+            <h1 style="background-color: burlywood; padding: 8px;">if and logical-operation page</h1>
+            <br>
+            <!-- end-page-title -->
+<!-- =================================================================== -->
+
+<!--  start-condition syntax -->
+<div class="if-condition-syntax">
+  <h2>if condition syntax:</h2>
+ 
+  <h4>if (condition){<br> statement;<br> <br> }else if(new condition){<br>new statement; <br><br>}else{ <br> if non of statements; <br> }   
+  </h4>
+</div>
+<!--   end-condition syntax -->
+
+<div class="if-condition">
+  <h2>IF:<br>-in if condition the condition check in order. if the first condition be true, then did not check other conditions if not then will check other conditions. <br><br> -we also can use (else if) as much as we want.</h2>
+</div>
+
+
+<!--   start-logical operators -->
+<div class="logical-operators"> 
+  <h2>logical operators:</h2>
+    <h5>-logical operators use for comparison. <br><br> <strong>1-( < > <= >= )</strong><br> <strong>2-( == ) check only values in variables</strong><br> <strong>3-( === ) check values and datatype in variables</strong><br> <strong>4-( != !==) ! means: is not to be</strong><br> <strong>5-( && ) means:AND (both condition should be true)</strong><br> <strong>6-( || ) means:OR (one of condition should be true)</strong> <br><br><strong>-to compare the variables with same condition we should use ( ) ex: <br> is true=  (numA || numB)<10 <br> is false= numA || numB <10 </strong></h5>
+</div>
+<!--  end-logical operators -->
+
+
+
+
+
+
+
+
+
+<!-- start-links================================================== -->
+    <!-- bootstrap-script start -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!-- bootstrap-script end -->
+<!-- ============================================================== -->
+
+<!-- start-js-link -->
+<script src="./if-condition.js"></script>
+<!-- end-js-link -->
+<!-- end-links===================================================== -->
+<div style="margin-bottom: 500px;"></div>
+</body>

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css learning</title>
+      <!-- bootstrap-css--link -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+     
+
+    <!-- internal css part 2============== -->
+    <style>
+
+      body{
+       
+        padding: 10px;
+      }
+
+       #internal-css{
+        background-color: cadetblue;
+        color: navy;
+       } 
+    </style>
+    <!-- ===================================== -->
+
+    <!-- external css using link===================== -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  
+<!-- =================================================================== -->
+    <!-- bootstrap-navbar -->
+           <!-- start-bootstrap navbar ========= -->
+           <nav class="navbar navbar-expand-lg bg-success">
+            <div class="container-fluid">
+      
+              <!-- navbar logo/title/brand -->
+              <a class="navbar-brand" href="#">Logo</a>
+      
+              <!-- hamburger-menu-button -->
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+      
+              <!-- to move hamburger-menu-items to the right side we need to add justify-content-end to collapse navbar.-->
+              <div class="collapse navbar-collapse justify-content-end " id="navbarNav">
+      
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/html-learning/index.html" target="_blank">html-form</a>
+                  </li>
+    
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/html-learning/semantic.html" target="_blank">html-semantic</a>
+                  </li>
+    
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/css learning/css/csslearning.html" target="_blank">css-learning</a>
+                  </li>
+    
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/css learning/flexbox-lessons/flxbox.html" target="_blank">css-flexbox</a>
+                  </li>
+    
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/css learning/media-query/mediaquery.html" target="_blank">mediaquery</a>
+                  </li>
+    
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/css learning/css-grid/grid.html" target="_blank">css-grid</a>
+                  </li>
+    
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/css learning/css-position/position.html" target="_blank">css-position</a>
+                  </li>
+    
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/css learning/bootstrap/bootstrap.html" target="_blank">bootstrap</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/javascript/js-lessons/javascript-lessons.html" target="_blank">javascript-lessons</a>
+                  </li>
+                  
+
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/javascript/if-condition/if-condition.html" target="_blank">if/operation</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/javascript/for-while-loop/for-while-loop.html" target="_blank">for/while loop</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/javascript/array/array.html" target="_blank"> array</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/javascript/function/function.html" target="_blank"> function</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/javascript/object/object.html" target="_blank"> object</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/javascript/DOM/DOM.html" target="_blank">DOM</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/javascript/API/API.html" target="_blank">API</a>
+                  </li>
+    
+
+
+                  
+                </ul>
+              </div>
+            </div>
+          </nav>
+            <!-- end-bootstrap navbar ========= -->
+
+             <!-- start-page-title -->
+            <h1 style="background-color: burlywood;">css-learning-page</h1>
+            <br>
+             <!-- end-page-title -->
+<!-- =================================================================== -->
+
+
+             
+    <!-- 3 form of using css start=========================-->
+    <h1>we can use css in 3 forms:</h1>
+    <ol>
+        <li>inline css (use css directly in element)</li>
+        <li> internal css (use css in head tag using: id(#),class(.) or tagname(ex:h1))</li>
+        <li>external css (use css in another file and link it to the html file in head using link tag)</li>
+    </ol>
+    <!-- inline css -->
+    <h2 style="color: red; background-color: bisque;"> (margin:0 in body) 1.inline css </h2>
+    <!-- internal css part 1 -->
+    <h2 id="internal-css">(margin:0 in body)2.internal css</h2>
+    <!-- external css links to style.css -->
+    <h2 id="external-css">(margin:0 in body)3.external css</h2>
+    <br>
+    <hr>
+    <!-- 3 form of using css end=======================-->
+   
+    <!-- used margin 0 in body and spaces between lines============= -->
+    <h2> change the spaces between lines:(line-height: 30px;) </h2>
+    <p id="change-spaces-between-lines">  Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, earum vel repellendus quis soluta vitae perferendis libero animi quisquam eum, eveniet id. Maiores quibusdam obcaecati repellat quo alias laborum eveniet.</p>
+    <br>
+    <hr>
+    <!-- ========================================================= -->
+
+    <!-- use container -->
+    <h2>container:( width: 80%; margin: auto;)</h2>
+    <div class="container">
+        <div>
+            <p>
+                <strong>(using container(main page) with margin auto and width with % instade of px)</strong> <br>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur unde, vero eius iusto officiis nobis vitae nostrum deserunt voluptas id. Delectus laboriosam quasi laborum maxime molestiae, molestias architecto officia cum?
+            </p>
+        </div>
+    </div>
+    <br>
+    <hr>  
+    <!-- ================================================== -->
+
+    <!-- margin -->
+    <h2>margin:</h2>
+    <p id="p-margin"><strong>(margin makes external spaces between elements (top-right-bottom-left))</strong><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure laborum soluta aliquam quas veniam quo molestiae, totam nulla eaque dicta nisi nam, consectetur laboriosam quam magni corrupti magnam, unde sed!</p>
+    <hr>
+    <!-- padding -->
+    <h2>padding:</h2>
+    <p id="p-padding"><strong>(padding makes internal spaces for an  elements (top-right-bottom-left))</strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ipsa ipsam maxime laborum nobis quo corrupti! Accusamus eius, vel voluptate dolorem libero maxime nam tempore sint eos aliquid architecto quaerat.</p>
+    <br>
+    <hr>
+    <!-- ====================================================== -->
+
+    <!-- using only div class to style -->
+    <h2>using only div class to style:</h2>
+    <h4>.only-div-class-to-style h2{
+        text-align: center;
+        color: darkgreen;
+        
+    }</h4>
+    <div class="only-div-class-to-style">
+        <ul>
+            <h2>  change h2 style only using div class</h2>
+            <li><a href="#"> change list1 style  only using div class <strong>( remove underline using text decoration non)</strong></a></li>
+            <li><a href="#"> change list2 style only using div class</a></li>
+            <li><a href="#">change list3 style  only using div class</a></li>
+        </ul>
+
+    </div>
+    <br>
+    <hr>
+    <!-- =================================================== -->
+
+    <!-- flout elements -->
+    <h2>flout:</h2>
+    <div class="flout-text">
+        <h3>flout element 1</h3>
+        <p>   we should set the <strong>width: 33%</strong> ; that means 100/3, because we want to have 3 column in each row.</p>
+    </div>
+
+    <div class="flout-text">
+        <h3>flout element 2</h3>
+        <p> we also need to set <strong>box-sizing: border-box</strong>, 
+            box sizing border box can save all the column in any screen size next to each other but without any margin.
+            </p>
+    </div>
+
+    <div class="flout-text">
+        <h3>flout element 3</h3>
+        <p>to fix the equally height we need to fix hight in px</p>
+    </div>
+
+    <!-- clear float ====================-->
+    <!-- if we want to make another flout element in different sizing we need back the float to the default form by making an empty (div with class:clear and then style clear to both) to back float for ex: from left to nothing.  -->
+    <div class="clear"></div>
+    <h2>clear float:</h2>
+    <h4 id="important-clear">if we want to make another flout element in different sizing we need back the float to the default form by making an empty (div with class:clear and then style clear to both) to back float for ex: from left to nothing.</h4>
+    <!--clear float ======================= -->
+
+    <div id="float-element1">
+        <h3> float element 1( in diiferent width and hight) </h3>
+        <p> float: left;
+            width: 70%;
+            background-color: aquamarine;
+            padding: 10px;
+            box-sizing: border-box;</p>
+    </div>
+
+    <div id="float-element2">
+        <h3>float element 2 </h3>
+        <p> float: right;
+            width: 30%;
+            background-color: bisque;
+            padding: 10px;
+            box-sizing: border-box;</p>
+    </div>
+    
+
+
+    <!-- ===================================================== -->
+
+    <div style="margin-top: 500px"></div> 
+
+
+
+      <!-- bootstrap-script start -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+      <!-- bootstrap-script end -->
+</body>
+</html>

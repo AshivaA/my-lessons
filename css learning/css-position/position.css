@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(240, 226, 207);
+    margin: 0;
+}
+
+/* ========= */
+
+h2{
+    margin-left: 10px;
+}
+
+div{
+    margin: 20px;
+}
+
+/* fixed navbar======= */
+
+#navbar{
+    background-color: navy;
+    color: rgb(99, 196, 79);
+    margin-left: 0;
+  
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    
+}
+
+/* static============= */
+.static-parents{
+    background-color: cadetblue;   
+}
+
+.static-parents .static-ch1{
+    background-color:rgb(200, 172, 11);
+    width: 100px;
+    height: 100px;
+}
+
+.static-parents .static-ch2{
+    background-color:rgb(6, 114, 35);
+    width: 100px;
+    height: 100px;
+}
+
+.static-parents .static-ch3{
+    background-color:rgb(14, 52, 100);
+    width: 100px;
+    height: 100px;
+}
+
+
+/* relative=========== */
+.relative-parents{
+    background-color: cadetblue; 
+     
+}
+
+.relative-parents .relative-ch1{
+    background-color:rgb(200, 172, 11);
+    padding: 10px;
+    width: 100px;
+    height: 160px;
+    /* ==== */
+    position: relative; 
+    left: 20px;
+    top: 30px;
+}
+
+.relative-parents .relative-ch2{
+    background-color:rgb(6, 114, 35);
+    padding: 10px;
+    width: 100px;
+    height: 190px;
+     /* ==== */
+     position: relative; 
+     left: 300px;
+     bottom:40px ;
+}
+
+.relative-parents .relative-ch3{
+    background-color:rgb(14, 52, 100);
+    color: aquamarine;
+    padding: 10px;
+    width: 100px;
+    height: 170px;
+     /* ==== */
+     position: relative; 
+     left: 90px;
+     bottom: 30px;
+}
+
+/* absolute================= */
+/*  an element with absolute position can cover the next element */
+.absolute-position p{
+    background-color: darkred;
+    color: darkgray;
+    padding: 20px;
+    /* === */
+    position: absolute;
+}
+
+.absolute-position .absolute-ch1{
+    background-color:rgb(200, 172, 11);
+    padding: 10px;
+    width: 200px;
+    height: 100px;
+}
+/* ============ */
+
+.absolute-parents{
+    background-color: cadetblue;
+     /*=====  */
+    position: relative;
+    /* left: 200px;   */
+}
+.absolute-parents .absolute-ch2{
+    background-color:rgb(6, 114, 35);
+    padding: 10px;
+    width: 200px;
+    height: 180px;
+}
+
+.absolute-parents .absolute-ch3{
+    background-color:rgb(14, 52, 100);
+    color: rgb(210, 184, 145);
+    padding: 10px;
+    width: 130px;
+    height: 160px;
+     /* ===== */
+     position: absolute; 
+     left: 280px;
+     bottom: 12px;
+}
+
+/* fixed============== */
+
+.fixed-parents{
+    background-color: cadetblue; 
+    
+     
+}
+
+.fixed-parents .fixed-ch1{
+    background-color:rgb(200, 172, 11);
+    width: 200px;
+    height: 100px;
+    /* position: fixed; */
+}
+
+.fixed-parents .fixed-ch2{
+    background-color:rgb(6, 114, 35);
+    padding: 8px;
+    width: 120px;
+    height: 110px;
+    position: fixed;
+    top: 74px;
+    right: 0;
+}
+
+.fixed-parents .fixed-ch3{
+    background-color:rgb(14, 52, 100);
+    width: 100px;
+    height: 100px;
+}
+
+
+
+
+/* sticky================ */
+.sticky-parents{
+    background-color: cadetblue;
+    padding: 20px;
+    width: 500px; 
+    height: 800px;  
+    
+}
+
+.sticky-parents .sticky-ch1{
+    background-color:rgb(200, 172, 11);
+    width: 100px;
+    height: 100px;
+    /* ==== */
+   
+}
+
+.sticky-parents .sticky-ch2{
+    background-color:rgb(6, 114, 35);
+    width: 100px;
+    height: 100px;
+}
+
+.sticky-parents .sticky-ch3{
+    background-color:rgb(14, 52, 100);
+    width: 120px;
+    height: 130px;
+    padding: 10px;
+    color: rgb(17, 214, 149);
+    /* ===== */
+    position: sticky;
+    top: 100px;
+    left: 250px;
+}

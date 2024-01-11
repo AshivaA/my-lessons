@@ -1,0 +1,204 @@
+
+/* *{}= universal selector */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: lightsteelblue;
+    margin: 0;
+    padding: 0;
+}
+
+@media (max-width:768px) {
+    .grid-img{
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 7px;
+    }
+
+    .grid-container-box-position{
+        grid-template-columns: 1fr  ;
+        grid-template-rows: 1fr 1fr ;
+    
+    }   
+}
+/* ================== */
+
+p{
+    font-size: small;
+}
+
+hr{
+        height: 3px;
+        background-color: black;   
+}
+
+
+/* container=============== */
+.grid-container{
+    background-color: blanchedalmond;
+    padding: 10px;
+    /* ============ */
+    display: grid;
+    gap: 5px;
+    /* grid-template-columns: 45% 15% 10% 20% 10%; */
+    grid-template-columns: 70% 30%; 
+}
+
+.grid-container .boxes{
+    background-color: cadetblue;
+    padding: 10px;  
+}
+/* ======================================= */
+
+
+
+/*  grid-container using fr==================== */
+.grid-container-fr{
+    background-color: rgb(61, 61, 127);
+    padding: 10px;
+    
+   /* ===== */
+   display: grid;
+   gap: 10px;
+   /* 1fr= one part of the whole available width.*/
+   /* grid-template-columns: 3fr 1fr 2fr ; */
+   grid-template-columns: 2fr 1fr  ;
+   /* grid-auto-rows makes hight for boxes. */
+   /* grid-auto-rows: 100px; */
+}
+.grid-container-fr #box1{
+    background-color: rgb(92, 227, 227);
+    padding: 8px;
+}
+.grid-container-fr #box2{
+    background-color: rgba(117, 240, 77, 0.86);
+    padding: 8px;
+}
+.grid-container-fr #box3{
+    background-color: rgb(76, 142, 242);
+    padding: 8px;
+}
+.grid-container-fr #box4{
+    background-color: rgb(241, 137, 196);
+    padding: 8px;
+}
+.grid-container-fr #box5{
+    background-color: rgb(162, 241, 89);
+    padding: 8px;
+}
+
+/* nested elements */
+.grid-container-fr #box6{
+    background-color: rgb(245, 102, 135);
+    padding: 8px;  
+}
+.grid-container-fr .box6-with-nested-elements{
+    display: grid;
+    gap: 5px;
+    grid-template-columns: 3fr 2fr 4fr;
+    padding: 20px;
+   background-color: antiquewhite;
+}
+.grid-container-fr h3{
+    background-color: rgb(16, 120, 130);
+    padding: 3px;
+}
+/* =========== */
+
+.grid-container-fr #box7{
+    background-color: rgb(132, 166, 213);
+    padding: 8px;
+}
+/* ========================================= */
+
+/* grid-container-boxes (div:nth-child(odd))============= */
+.grid-container-boxes{
+    background-color: rgb(8, 62, 73);
+    color: rgb(10, 182, 171);
+    padding: 10px;
+    /* ===== */
+    display: grid;
+    gap: 3px;
+    grid-template-columns: 3fr 2fr ;
+    
+}
+.grid-container-boxes div{
+    padding: 10px;
+    margin: 8px;
+}
+/* ============================================ */
+
+
+/* div:nth-child(odd)= the div child with odd number(1,3,5,...) */
+.grid-container-boxes div:nth-child(odd){
+    background-color: rgb(76, 165, 48);
+    color: navy; 
+}
+/* ========================================== */
+
+
+
+
+/* changing box position ===============*/
+.grid-img{
+    display: flex;
+    margin: 10px;
+    justify-content: space-evenly;
+}
+
+
+.grid-container-box-position{
+    background-color: rgb(24, 87, 108);
+    color: rgb(3, 4, 30);
+    padding: 10px;
+    
+    /* ===== */
+    display: grid;
+    gap: 8px;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+.grid-container-box-position .box-1{
+    background-color: darkolivegreen;
+    padding: 10px;
+
+    /*  1/3= start from 1 end from 3 */
+    grid-column: 1/2; 
+    grid-row: 1/2; 
+}
+
+.grid-container-box-position .box-2{
+    background-color: rgb(103, 86, 150);
+    padding: 10px;
+      
+    grid-column: 2/4;
+    grid-row: 1/3;  
+}
+
+.grid-container-box-position .box-3{
+    background-color: rgb(165, 39, 108);
+    padding: 10px;
+     
+    grid-column: 1/2;
+    grid-row: 2/3;   
+}
+
+.grid-container-box-position .box-4{
+    background-color: rgb(172, 75, 20);
+    padding: 10px;
+   
+    grid-column: 1/3;
+    grid-row: 3/4; 
+}
+
+.grid-container-box-position .box-5{
+    background-color: rgb(10, 137, 91);
+    padding: 10px;
+   
+    grid-column: 3/4;
+    grid-row: 2/4; 
+}

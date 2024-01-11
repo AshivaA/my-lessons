@@ -1,0 +1,235 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+
+     <!-- bootstrap-css--link -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+     <!-- local-css-link -->
+    <link rel="stylesheet" href="array.css">
+</head>
+<body>
+
+<!-- =================================================================== -->
+     <!-- bootstrap-navbar -->
+           <!-- start-bootstrap navbar ========= -->
+           <nav class="navbar navbar-expand-lg bg-success" width: 100%;>
+            <div class="container-fluid">
+      
+              <!-- navbar logo/title/brand -->
+              <a class="navbar-brand" href="#">Logo</a>
+      
+              <!-- hamburger-menu-button -->
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+      
+              <!-- to move hamburger-menu-items to the right side we need to add justify-content-end to collapse navbar.-->
+              <div class="collapse navbar-collapse justify-content-end " id="navbarNav">
+      
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/html-learning/index.html" target="_blank">html-form</a>
+                  </li>
+    
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/html-learning/semantic.html" target="_blank">html-semantic</a>
+                  </li>
+    
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/css learning/css/csslearning.html" target="_blank">css-learning</a>
+                  </li>
+    
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/css learning/flexbox-lessons/flxbox.html" target="_blank">css-flexbox</a>
+                  </li>
+    
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/css learning/media-query/mediaquery.html" target="_blank">mediaquery</a>
+                  </li>
+    
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/css learning/css-grid/grid.html" target="_blank">css-grid</a>
+                  </li>
+    
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/css learning/css-position/position.html" target="_blank">css-position</a>
+                  </li>
+    
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/css learning/bootstrap/bootstrap.html" target="_blank">bootstrap</a>
+                  </li>
+    
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/javascript/js-lessons/javascript-lessons.html" target="_blank">javascript-lessons</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/javascript/if-condition/if-condition.html" target="_blank">if/operation</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/javascript/for-while-loop/for-while-loop.html" target="_blank">for/while loop</a>
+                  </li>
+
+                  
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/javascript/array/array.html" target="_blank"> array</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/javascript/function/function.html" target="_blank"> function</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/javascript/object/object.html" target="_blank"> object</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/javascript/DOM/DOM.html" target="_blank">DOM</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/javascript/API/API.html" target="_blank">API</a>
+                  </li>
+    
+                  
+                </ul>
+              </div>
+            </div>
+          </nav>
+            <!-- end-bootstrap navbar ========= -->
+           
+            <!-- start-page-title -->
+            <h1 style="background-color: burlywood; padding: 8px;">Array-page</h1>
+            <br>
+            <!-- end-page-title -->
+<!-- =================================================================== -->
+<!-- start-array-instruction -->
+<div class="array-introduction">
+  <h6> 
+    <br><strong>-Array: </strong> is a collection of values. they can be the same or different datatype. but it is better to use only one of datatype in an array. <br>ex: let number=[1,4,90]; or let collection=[4,"text",true]; <br><br><strong>example:</strong> <br>this is our array shows in console: (3) [2,"text",true] <br>-if we consider an array as a hotel, the values inside in, should assume as the guests of each hotel rooms or <strong>index</strong> so: <br>-(3) is: the length of an array (the hotel has 3 rooms) <br>-(0:2) means: (the index of 2 is 0) or (2 is in room number 0) <br>-(1:'text') means: (the index of 'text' is 1) or ('text' is in room number 1) <br>-(2:true) means: (the index of true is 2) or (true is in room number 2)  <br><strong>(we have index only in array)</strong><br> <br>
+    <strong>-access the special value:</strong> <br>
+    to access the special array value we need index number ex: <br> console.log(dataTypArray [0]); = 2 <br>
+    console.log(dataTypArray [1]); = 'text' <br>
+    console.log(dataTypArray [2]); = true <br> <br>
+  
+    <strong>-add or replace a value in an array:</strong> <br>
+    we only need to change the index: <br><strong>add:</strong><br> (dataTypArray [3] = 77;) in console we have: (4) [2,"text",true,77]<br>
+    <br><strong>replace:</strong><br> (dataTypArray [2] = false;) in console we have: (4) [2,"text",false,77]<br>==================<br><br>
+  </h6>
+</div>
+<!-- end-array-instruction -->
+
+
+<!-- start-normal-array-method -->
+<div class="normal-array-method">
+
+  <h2> normal array method:</h2>
+  <h6> let numbers=[0,1,2,3,40,50,60,7,8,9,10];<br>let result;
+  <br><br>
+
+    <strong>result= numbers.length;</strong>(length is a property so don't need () )<br>
+    <strong>result= numbers.indexOf(5);</strong>(shows the item in this index) <br><p>----------</p>
+   
+    <strong>-unshift/shift</strong><br>
+    <strong>result= numbers.unshift(-1);</strong>( add a number from the start of an array) <br>
+    <strong>result= numbers.shift();</strong>( remove a number from the start of an array. we don't need to set any number) <br><p>----------</p>
+
+    <strong>-push/pop</strong><br>
+    <strong>result= numbers.push(11);</strong>( add a number from the end of an array)
+     <strong>result= numbers.pop();</strong>( remove a number from the end of an array. we don't need to set any number) <br><p>----------</p>
+
+    <strong>-replace/remove new number</strong><br>
+    <strong> result= numbers.splice(2, 0, 80);</strong>(replace new number in special index) <br>(2=index[2], 0=keep the new number in the same index, 80=the new number) <br>
+   
+    <strong>result= numbers.splice(5, 1);</strong>( remove a number from special index) <br>(5 = when rich index 5, 1= then remove the item in index5) <br><br>
+
+    <strong>-remove a series of numbers from an index to another index:</strong> <br> <strong>result= numbers.splice(7, 2);</strong><br>(7 = when rich index 7, 2= then remove the item in index7, and the next one ) 
+   </h6><p>----------</p>
+
+   <h6> <strong>-concatenate tow array each other:</strong><br>
+    let Numbers1=[1,2,3,4,5];<br>
+    let Numbers2=[10,20,30,40,50];<br>
+    let concatResult;<br>
+    <strong>concatResult= Numbers1.concat(Numbers2);</strong>
+    </h6><p>----------</p>
+
+</div>
+<!--end-normal-array-method -->
+
+<!--start-array-compare-function-method-->
+ <div class="array-compare-function-method">
+
+  <h3>-compare function method: <br>(is function that use compare parameter means use( < > = signs to compare parameter).)</h3>
+  <p>-compare function is also kind of hight order function, means use function in entrance or in exit.</p>
+
+  <h6><strong>compare function syntax:<br>let result=Array name.method(function compare(array items) { <br>return (array items compare to something) <br>})</strong><br><strong>-parameters can be :</strong> (x,y) or (only a name to shows array items) <br><strong>-compare parameter : </strong>( < > = ) <br> <strong>-let result or result (both are true)</strong>
+
+
+
+  </h6><p>--------------</p>
+
+  <h6>
+    <strong>-sort ():will change the original array.</strong><br>
+    let Numbers= [3,91,7,67,0,52,40];<br><br>
+    <strong>-sort numbers in order: <br>
+      SortNumOrder=Numbers.sort(function(x,y){<br>return x-y;(sort numbers left to right)<br>});<br>
+    </strong>=>[0,3,7,40,52,67,91]<br><br>
+
+    <strong>-sort numbers in revers:<br>
+      SortNumRevers= Numbers.sort(function(x,y){ <br>return y-x;(sort numbers right to left)<br>});<br>
+    </strong>=>[ 91,67,52,40,7,3,0]  
+  </h6><br>
+
+    <h6 style="color: darkred;"><strong>important:</strong> <br><strong>-we can not sort the array numbers by [sortNumbers= Numbers.sort();] because the javascript consider only the first number to sort the numbers so the 67 consider as 6/ or 91 consider as 9. <br><strong>-the result is:[0,3,40,52,67,7,91]</strong> <br><br> let Numbers= [3,91,7,67,0,52,40]; <br>let sortNumbers;<br>sortNumbers= Numbers.sort();=>[0,3,40,52,67,7,91]<br></strong></h6><p>--------------</p>
+
+    <h6><strong>-filter ():can make new array to save results so do not change the original array.</strong><br>let Numbers= [3,91,7,67,0,52,-1,-9,40];<br><br>filterResult= Numbers.filter(function (Number(shows array items)) {<br>return Number < 0; <br>}) <br><br>=>[-1, -9] <br><br>
+     <strong>how filter() works: <br>-in first loop: <br>1-compare first Numbers item or index[0]< 0 so the first loop is 3<0  <br>2-if true then save it in filterResult if false then ignore it. </strong> <br>
+     and this is the same way to check all items in an array.
+
+    </h6><p>--------------</p>
+
+    <h6><strong>-map(): can make new array to save results so do not change the original array.</strong><br><br>
+      let Numbers= [-1,-9,0,3,40,52,67,7,91] <br><br>mapResult=Numbers.map(function(Number) { <br>return Number + 1 <br> }) <br>mapResult= [0, -8, 1, 4, 41, 53, 68, 8, 92]
+    </h6></h6><p>--------------</p>
+
+    <h6><strong>-reduce():when we want to have only one number as result we use this method(ex: we want to sum all the numbers in an array)</strong> <br><br>let Numbers= [3,91,7,67,0,52,-1,-9,40];<br><br>reduceResult= Numbers.reduce(function(sum,Number) { <br>return sum + Number <br> }) <br>=>250
+   
+  </h6>
+
+
+ </div>
+<!--end-array-compare-function-method -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- start-links================================================== -->
+    <!-- bootstrap-script start -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!-- bootstrap-script end -->
+<!-- ============================================================== -->
+
+<!-- start-js-link -->
+<script src="./array.js"></script>
+<!-- end-js-link -->
+<!-- end-links===================================================== -->
+<div style="margin-bottom: 500px;"></div>
+</body>
+</html>

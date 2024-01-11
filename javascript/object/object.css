@@ -1,0 +1,46 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+body{
+    background-color: darkgray;
+    margin: 0;
+
+    /* width: 100%; */
+    overflow-x: hidden;
+    /* color: navy; */
+}
+
+hr{
+    border: 8px solid navy; 
+   
+}
+/* ========= */
+
+.object-syntax{
+    background-color: goldenrod;
+    padding: 7px;
+}
+
+.object-description{
+    background-color: rgb(104, 147, 182);
+    padding: 7px;
+}
+
+.constructor{
+    background-color: rgb(216, 175, 94);
+    padding: 7px;
+}
+
+.making-method{
+    background-color: rgb(209, 135, 155);
+    padding: 7px;
+}
+
+.window-object{
+    background-color: cadetblue;
+    padding: 7px;
+}

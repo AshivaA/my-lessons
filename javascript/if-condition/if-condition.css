@@ -1,0 +1,37 @@
+
+*{
+    margin: 0;
+    padding: 0;  
+}
+
+body{
+    background-color: rgba(65, 117, 123, 0.467);
+    margin: 0;
+
+    width: 100%;
+    overflow-x: hidden;
+}
+
+div{ 
+    margin: 10px;
+    padding: 10px;
+}
+
+hr{
+    border: 8px solid navy; 
+   
+}
+/* ========= */
+
+.if-condition-syntax{
+    background-color: goldenrod;
+}
+
+.if-condition{
+    background-color: cadetblue;
+}
+
+.logical-operators{
+    background-color: coral;
+
+}

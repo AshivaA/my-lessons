@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(49, 90, 132);
+    margin: 10px;
+    overflow-x: hidden;
+    
+}
+
+hr{
+    height: 8px;
+    background-color: rgb(255, 243, 243);
+}
+
+
+
+
+/* =========== */
+
+/* navbar */
+.navbar-description{
+    background-color: lightpink;
+    margin: 10px;
+    padding: 10px;
+}
+
+
+
+
+/* bootstrap-links */
+.bootstrap-links{
+    background-color: darkgoldenrod;
+    margin: 10px;
+    padding: 10px;
+}
+
+.bootstrap-normal-container{
+    background-color: darkcyan;
+    margin: 10px;
+    padding: 10px;
+
+}
+
+.bootstrap-container-fluid{
+    background-color: rgb(130, 185, 75);
+
+}
+
+/* bootstrap-grid======== */
+
+.bootstrap-grid-basics{
+    background-color: lightsalmon;
+    margin: 10px;
+    padding: 10px;
+}
+
+/* ====== grid container  */
+
+.bootstrap-container-grid{
+    background-color: rgb(122, 182, 61);
+    margin: 10px;
+    padding: 10px;  
+}
+
+.bootstrap-container-grid .bootstrap-grid{
+   
+    background-color: lightseagreen;
+    width: 330px;
+    height: 250px;
+
+    margin: 10px;
+    padding: 20px;
+}
+
+/* bootstrap-grid-container-do-not-use-all-12 column */
+
+.bootstrap-grid-container-empty-space{
+    background-color: darkseagreen;
+    margin: 10px;
+    padding: 10px;
+ 
+}
+
+.make-empty-space-using-column{
+
+    background-color: darkgoldenrod;
+   
+    margin: 3px;
+    padding: 12px;
+
+}
+
+/* inherit part */
+
+.inherit-column-text{
+    background-color: darkkhaki;
+    margin: 10px;
+    padding: 10px;
+}
+
+
+/* container text-adjustable */
+
+.text-adjustable {
+    background-color: bisque;
+    padding: 20px;  
+}
+
+/* bootstrap-cards */
+.bootstrap-cards{
+    background-color: rgb(147, 179, 96);
+    padding: 10px;
+}
+
+/* accordions-items */
+
+.accordions-items{
+    background-color: gray;
+    padding: 10px;
+}
+
+/* bootstrap-icon */
+
+.bootstrap-icon{
+    background-color: palevioletred;
+    padding: 10px;
+}
+

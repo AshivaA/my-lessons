@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+
+      <!-- bootstrap-css--link -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+      <!-- local-css-link -->
+    <link rel="stylesheet" href="flexbox.css">
+</head>
+<body>
+
+<!-- =================================================================== -->
+   <!-- bootstrap-navbar -->
+           <!-- start-bootstrap navbar ========= -->
+           <nav class="navbar navbar-expand-lg bg-success">
+            <div class="container-fluid">
+      
+              <!-- navbar logo/title/brand -->
+              <a class="navbar-brand" href="#">Logo</a>
+      
+              <!-- hamburger-menu-button -->
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+      
+              <!-- to move hamburger-menu-items to the right side we need to add justify-content-end to collapse navbar.-->
+              <div class="collapse navbar-collapse justify-content-end " id="navbarNav">
+      
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/html-learning/index.html" target="_blank">html-form</a>
+                  </li>
+    
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/html-learning/semantic.html" target="_blank">html-semantic</a>
+                  </li>
+    
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/css learning/css/csslearning.html" target="_blank">css-learning</a>
+                  </li>
+    
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/css learning/flexbox-lessons/flxbox.html" target="_blank">css-flexbox</a>
+                  </li>
+    
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/css learning/media-query/mediaquery.html" target="_blank">mediaquery</a>
+                  </li>
+    
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/css learning/css-grid/grid.html" target="_blank">css-grid</a>
+                  </li>
+    
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/css learning/css-position/position.html" target="_blank">css-position</a>
+                  </li>
+    
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/css learning/bootstrap/bootstrap.html" target="_blank">bootstrap</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/javascript/js-lessons/javascript-lessons.html" target="_blank">javascript-lessons</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/javascript/if-condition/if-condition.html" target="_blank">if/operation</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/javascript/for-while-loop/for-while-loop.html" target="_blank">for/while loop</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/javascript/array/array.html" target="_blank"> array</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/javascript/function/function.html" target="_blank"> function</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/javascript/object/object.html" target="_blank"> object</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/javascript/DOM/DOM.html" target="_blank">DOM</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/javascript/API/API.html" target="_blank">API</a>
+                  </li>
+    
+    
+                  
+                </ul>
+              </div>
+            </div>
+          </nav>
+            <!-- end-bootstrap navbar ========= -->
+
+             <!-- start-page-title -->
+            <h1 style="background-color: burlywood;">css-flexbox-page</h1>
+            <br>
+             <!-- end-page-title -->
+<!-- =================================================================== -->
+
+    <h1>definition:</h1>
+    <h4>the flex box can only makes element in row or in column <strong>(only in one dimension x or y)</strong>. if we want to have different other forms of boxes we should use css grids.</h4>
+    <br>
+    <hr>
+    <!-- parents child flex box ==========-->
+    <h2>display-flex:</h2>
+    <div class="parents-flex-container">
+      
+        <p>parents flex box, <br> (display flex can be in child too but should be always in parents too ) </p>
+
+       <div class="children-flex">children-flex 1</div>
+       <div class="children-flex">children-flex 2</div>
+       <div class="children-flex">children-flex 3</div>
+
+    </div>
+    <br>
+    <hr>
+    <!-- ================================ -->
+
+    <!-- flexbox (justify-content) -->
+    <h2>justify-content:</h2>
+    <div class="parents-flex-container-justify-content"> 
+        
+        <p>parents flex box <br>(justify-content shold only be in parents) <br>(x=left to right)</p>
+
+       <div class="children-flex-ex1">children</div>
+       <div class="children-flex-ex1">children</div>
+       <div class="children-flex-ex1">children</div>
+
+    </div>
+    <br>
+    <hr>
+    <!-- =========================== -->
+
+     <!-- flexbox (align-items1) -->
+     <h2>align-items 1:( align-self: start/center/end;) </h2>
+     <div class="parents-flex-container-align-items1"> 
+        
+        <p>parents flex box, <br>(align-items can be in parents an children both) <br>(y=up to down)</p>
+
+       <div class="children-flex-align1-1">children-flex1 <br> (align-self: start;)</div>
+       <div class="children-flex-align1-2">children-flex2 <br> (align-self: center;)</div>
+       <div class="children-flex-align1-3">children-flex3 <br> (align-self: end;)</div>
+
+    </div>
+    <br>
+    
+    <!-- align-items2 -->
+    <h2>align-items 2:( align-items: flex-start/end or only center;)</h2><br>
+     <div class="parents-flex-container-align-items2"> 
+        
+        <p>parents flex box <br>(align-items: flex-start;) means that: <br>all the elements in container<br> will start from top and <br>will continue till get<br> the padding sets for container <br>for each element.</p>
+
+       <div class="children-flex-align2-1">children-flex1 <br> (flex:2; means box will grow in 2 sizes) <br>( order: 2; means comes as second box.) </div>
+       <div class="children-flex-align2-2">children-flex2 <br> (flex:4; means box will grow in 4 sizes) <br>( order: 1; means comes as first box.)</div>
+       <div class="children-flex-align2-3">children-flex3(original box) <br> (flex:1; means box size will not changes) <br>( order: 3;) </div>
+
+    </div>
+    <br>
+    <hr>
+    <!-- =============================== -->
+
+     <!-- flexbox (flex-direction) -->
+     <h2>flex-direction:</h2>
+     <div class="parents-flex-direction"> 
+        
+        <p>parents flex-direction(flex-direction: column;)</p>
+
+       <div class="children-flex-direction">children <br>(align-self: center;) </div>
+       <div class="children-flex-direction">(because the text is the child of children element, we can set the display:flex for children to change the text direction in an element.)  </div>
+       <div class="children-flex-direction">( display: flex; justify-content: center; align-items: center;align-self: center;) </div>
+
+    </div>
+    <br>
+    <hr>
+    <!-- =============================== -->
+
+    <!-- flexbox (flex-wrap) -->
+    <h2>flex-wrap:</h2>
+    <div class="parents-flex-wrap"> 
+        <p>parents flex wrap, <br>(if we use flex wrap in parents element, we can save the boxes at the same size and also we have responsive page as wel.) </p>
+
+       <div class="children-flex-wrap">children</div>
+       <div class="children-flex-wrap">children</div>
+       <div class="children-flex-wrap">children</div>
+       <div class="children-flex-wrap">children</div>
+       <div class="children-flex-wrap">children</div>
+       <div class="children-flex-wrap">children</div>
+       <div class="children-flex-wrap">children</div>
+       <div class="children-flex-wrap">children</div>
+       <div class="children-flex-wrap">children</div>
+
+    </div>
+    <br>
+    <hr>
+    <!-- =========================== -->
+
+  
+
+
+
+
+    <!-- ================================ -->
+    <div style="margin-top: 500px"></div> 
+
+
+
+      <!-- bootstrap-script start -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+      <!-- bootstrap-script end -->
+</body>
+</html>

@@ -1,0 +1,139 @@
+
+
+
+
+body{
+    /* margin:0; remove default spaces from left */
+    margin: 0px;
+    background-color: lightgoldenrodyellow;
+    
+}
+
+hr{
+    height: 2px;
+    background-color: black;
+}
+/* =================================================== */
+#external-css{
+    background-color: slateblue;
+    color: rgb(2, 21, 21);
+}
+/* ========================================== */
+#change-spaces-between-lines{
+    background-color: burlywood;
+    line-height: 30px;
+}
+/* ============================================ */
+.container{
+    /* using container you can fix every container at the same size */
+    background-color: chocolate;
+    /* using % instead of px can save the margin around an element when we change the screen size. */
+    width: 80%;
+    /* margin auto makes space from right and left  of an element equally */
+    margin: auto;
+}
+/* ================================================ */
+#p-margin{
+    /* we can use margin and padding in 3 ways */
+    background-color: aqua;
+    border: 4px brown solid;
+
+    /* one */
+    /* margin-top: 10px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    margin-left: 40px; */
+
+    /* tow (top,right,bottom,left)*/
+    margin:15px 10px 15px 20px;
+
+    /* three (5px(up-bottom), 10px(right-left)*/ 
+    /* margin: 5px 10px; */
+    
+}
+
+#p-padding{
+    background-color: chartreuse;
+    border: 3px navy solid;
+    padding: 20px;
+}
+/* ================================================== */
+
+/* using div class to style all the elements inside the div========== */
+.only-div-class-to-style{
+    background-color: cadetblue;
+
+}
+
+.only-div-class-to-style h2{
+    text-align: center;
+    color: darkgreen;
+    
+}
+
+.only-div-class-to-style ul{
+
+    line-height: 30px;
+     
+}
+
+.only-div-class-to-style a {
+    color: navy;
+    /* text decoration non , can remove the underline in a tags */
+    text-decoration: none;
+    
+}
+
+.only-div-class-to-style a:hover{
+    color: brown;
+}
+
+/* .only-div-class-to-style a:visited{
+    color: black;
+} */
+
+.only-div-class-to-style li{
+    padding: 6px;
+    border-bottom: 2px dotted;
+}
+/* ================================================= */
+
+/* flout-text in same size */
+.flout-text{
+    float: left;
+    /* width:33% means 100/3 because we want to have 3 column */
+    width: 33%;
+    height:300px;
+    /* box sizing border box can save all the column in any screen size next to each other */
+    box-sizing: border-box;
+    background-color: crimson;
+    border: 2px solid;
+    padding: 10px;
+    
+}
+
+/* clear float========= */
+.clear{
+    clear: both;
+}
+#important-clear{
+    background-color: black;
+    color:lightseagreen
+}
+/* ====================== */
+
+#float-element1{
+    float: left;
+    width: 70%;
+    background-color: aquamarine;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#float-element2{
+    float: right;
+    width: 30%;
+    background-color: bisque;
+    padding: 10px;
+    box-sizing: border-box;
+}

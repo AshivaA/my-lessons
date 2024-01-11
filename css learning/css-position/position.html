@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css-position</title>
+
+      <!-- bootstrap-css--link -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+      <!-- local-css-link -->
+    <link rel="stylesheet" href="position.css">
+</head>
+<body>
+
+<!-- =================================================================== -->  
+    <!-- bootstrap-navbar -->
+           <!-- start-bootstrap navbar ========= -->
+           <nav class="navbar navbar-expand-lg bg-success">
+            <div class="container-fluid">
+      
+              <!-- navbar logo/title/brand -->
+              <a class="navbar-brand" href="#">Logo</a>
+      
+              <!-- hamburger-menu-button -->
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+      
+              <!-- to move hamburger-menu-items to the right side we need to add justify-content-end to collapse navbar.-->
+              <div class="collapse navbar-collapse justify-content-end " id="navbarNav">
+      
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/html-learning/index.html" target="_blank">html-form</a>
+                  </li>
+    
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/html-learning/semantic.html" target="_blank">html-semantic</a>
+                  </li>
+    
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/css learning/css/csslearning.html" target="_blank">css-learning</a>
+                  </li>
+    
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/css learning/flexbox/flexbox-lessons/flxbox.html" target="_blank">css-flexbox</a>
+                  </li>
+    
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/css learning/media-query/mediaquery.html" target="_blank">mediaquery</a>
+                  </li>
+    
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/css learning/css-grid/grid.html" target="_blank">css-grid</a>
+                  </li>
+    
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/css learning/css-position/position.html" target="_blank">css-position</a>
+                  </li>
+    
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/css learning/bootstrap/bootstrap.html" target="_blank">bootstrap</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/javascript/js-lessons/javascript-lessons.html" target="_blank">javascript-lessons</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/javascript/if-condition/if-condition.html" target="_blank">if/operation</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/javascript/for-while-loop/for-while-loop.html" target="_blank">for/while loop</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/javascript/array/array.html" target="_blank"> array</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/javascript/function/function.html" target="_blank"> function</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/javascript/object/object.html" target="_blank"> object</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/javascript/DOM/DOM.html" target="_blank">DOM</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/javascript/API/API.html" target="_blank">API</a>
+                  </li>
+    
+    
+                  
+                </ul>
+              </div>
+            </div>
+          </nav>
+            <!-- end-bootstrap navbar ========= -->
+
+             <!-- start-page-title -->
+            <h1 style="background-color: burlywood;">css-position-page</h1>
+             <!--end-page-title -->
+<!-- =================================================================== -->            
+
+    <!-- navbar with position fixed. -->
+    
+        <h2 id="navbar">navbar with (position: fixed;/left: 0;/right: 0;/ top: 0;)</h2>
+   
+   
+    <!-- static============= -->
+    <div>
+        <h4 style="padding-top: 20px;">position-static:(default, nothing change and can replace other elements):</h4>
+
+    </div>
+   
+   <div class="static-parents">
+    <div class="static-ch1">static-child-1</div>
+    <div class="static-ch2">static-child-2</div>
+    <div class="static-ch3">static-child-3</div>
+   </div>
+
+   <!-- relative============= -->
+
+   <h2>position-relative:(can not replace other elements)</h2>
+   <div class="relative-parents">
+    <div class="relative-ch1">relative-child-1
+        <h6>position: relative;</h6>
+        <h6>left: 20px;</h6>
+        <h6>top: 30px;</h6>
+    </div>
+    <div class="relative-ch2">relative-child-2
+
+        <h6>position: relative;</h6>
+        <h6>left: 300px;</h6>
+        <h6>bottom: 40px;</h6>
+    </div>
+    <div class="relative-ch3">relative-child-3
+
+        <h6>position: relative;</h6>
+        <h6>left: 90px;</h6>
+        <h6>bottom: 30px;</h6>
+    </div>
+   </div>
+
+   <!-- absolute=========== -->
+
+   <h2>position-absolute:(can replace other elements)</h2>
+
+   <div class="absolute-position">
+    <p> an element with absolute position can cover the next element. yellow covered by red ( position: absolute);</p>
+    <div class="absolute-ch1">element covers by last element</div>
+   </div>
+   <br>
+
+   <!-- ====== -->
+   <div class="absolute-parents">
+    <h2>parents with position relative:</h2>
+    
+    <div class="absolute-ch2">absolute-ch2: <br> element with position absolute find the position related to the parents position. <br>-parents position:relative <br>-child position:absolute
+
+       
+    </div>
+    <div class="absolute-ch3">absolute-child3: <br>
+        <h6> position: absolute;</h6>
+            <h6>left: 280px;</h6>
+            <h6>bottom: 12px;</h6>
+    </div>
+   </div>
+
+   <!-- fixed============== -->
+
+   <h2>position-fixed:</h2>
+   <div class="fixed-parents">
+    <div class="fixed-ch1">fixed-child-1</div>
+    <div class="fixed-ch2">fixed-child-2
+        <h6> position:fixed;</h6>
+            <h6> top: 0;</h6>
+            <h6>right: 0;</h6>
+
+    </div>
+    <div class="fixed-ch3">fixed-child-3</div>
+   </div>
+
+   <!-- sticky============== -->
+
+   <h2>position-sticky: works in scrolled page. we can control the  sticky element position.(ex: scroll this element from here and fix it from here)</h2>
+   <div class="sticky-parents">
+    <div class="sticky-ch1">sticky-child-1</div>
+    <div class="sticky-ch2">sticky-child-2</div>
+    <div class="sticky-ch3">sticky-child-3
+        <h6> position: sticky;</h6>
+            <h6>top: 100px;</h6>
+            <h6>left: 250px;</h6>
+    </div>
+   </div>
+
+
+   <div style="margin-bottom: 500px;"></div>
+
+
+
+     <!-- bootstrap-script start -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+     <!-- bootstrap-script end -->
+</body>
+</html>

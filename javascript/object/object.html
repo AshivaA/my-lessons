@@ -1,0 +1,243 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+
+     <!-- bootstrap-css--link -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+     <!-- local-css-link -->
+    <link rel="stylesheet" href="object.css">
+</head>
+<body>
+
+<!-- =================================================================== -->
+     <!-- bootstrap-navbar -->
+           <!-- start-bootstrap navbar ========= -->
+           <nav class="navbar navbar-expand-lg bg-success" width: 100%;>
+            <div class="container-fluid">
+      
+              <!-- navbar logo/title/brand -->
+              <a class="navbar-brand" href="#">Logo</a>
+      
+              <!-- hamburger-menu-button -->
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+      
+              <!-- to move hamburger-menu-items to the right side we need to add justify-content-end to collapse navbar.-->
+              <div class="collapse navbar-collapse justify-content-end " id="navbarNav">
+      
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/html-learning/index.html" target="_blank">html-form</a>
+                  </li>
+    
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/html-learning/semantic.html" target="_blank">html-semantic</a>
+                  </li>
+    
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/css learning/css/csslearning.html" target="_blank">css-learning</a>
+                  </li>
+    
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/css learning/flexbox-lessons/flxbox.html" target="_blank">css-flexbox</a>
+                  </li>
+    
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/css learning/media-query/mediaquery.html" target="_blank">mediaquery</a>
+                  </li>
+    
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/css learning/css-grid/grid.html" target="_blank">css-grid</a>
+                  </li>
+    
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/css learning/css-position/position.html" target="_blank">css-position</a>
+                  </li>
+    
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/css learning/bootstrap/bootstrap.html" target="_blank">bootstrap</a>
+                  </li>
+    
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/javascript/js-lessons/javascript-lessons.html" target="_blank">javascript-lessons</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/javascript/if-condition/if-condition.html" target="_blank">if/operation</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/javascript/for-while-loop/for-while-loop.html" target="_blank">for/while loop</a>
+                  </li>
+
+                  
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/javascript/array/array.html" target="_blank"> array</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/javascript/function/function.html" target="_blank"> function</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/javascript/object/object.html" target="_blank"> object</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/javascript/DOM/DOM.html" target="_blank">DOM</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/javascript/API/API.html" target="_blank">API</a>
+                  </li>
+    
+                  
+                </ul>
+              </div>
+            </div>
+          </nav>
+            <!-- end-bootstrap navbar ========= -->
+           
+            <!-- start-page-title -->
+            <h1 style="background-color: burlywood; padding: 8px;">Object-page</h1>
+            <br>
+            <!-- end-page-title -->
+<!-- =================================================================== -->
+
+<!-- object syntax -->
+<div class="object-syntax">
+
+  <h3>object syntax:</h3>
+  <h6><strong>-object:</strong>
+    <br>let ObjectName={ <br> name:"Shiva", <br>gender:"female", <br><br>contact:{<br>number:12345, <br>email:"shiva@gmail.com",<br>}, <br><br>hobbies:["movies","codding","drawing"] <br> } <br><br>
+    <strong>-access one item in an object:</strong> (objectName <strong>.</strong> item) <br>
+    -console.log(ObjectName.name);=> shiva <br>
+    -console.log(ObjectName.contact.email);=> shiva@gmail.com <br>console.log(ObjectName.hobbies[2]);=> drawing <br></h6>
+    <p>===========</p>
+
+    <h6><strong>constructors:</strong><br><strong>-function-constructor: <br><br></strong>function functionName(parameter1,parameter2) {<br><strong>this.</strong>key1= parameter1(as a value);<br><strong>this.</strong>key2= parameter2(as a value);<br>} <br><br>let Object1= <strong>new </strong>functionName("argument1","argument2");<br>let Object2= <strong>new </strong>functionName("argument1","argument2");<br><br><strong>method: <br></strong> functionName. prototype.our methodName= function () { <br>return `${this.key1} ${this.key2}`;<br>} <br><br>console.log(objectName.our methodName());<br>===</h6>
+
+    <h6><strong>-class-constructor:</strong><br><br>class className <strong>{</strong><br> <strong>constructor</strong>(parameter1,parameter2){<br>this.key1= parameter1(as a value);<br>this.key2= parameter2(as a value);<br> } <br><br><strong>method: <br></strong>our methodName(){ <br> return `${this.key1} ${this.key2}`; <br> } <br>  <strong>}</strong> <br><br>let Object1= <strong>new </strong>className("argument1","argument2");<br>let Object2= <strong>new </strong>className("argument1","argument2");<br><br>console.log(objectName.our methodName());<br> </h6>
+    <p>===========</p>
+
+    <h6><strong>-making our method:</strong> <br><br><strong>-function-constructor method:(should be outside the function)</strong><br><br> functionName. prototype.our methodName= function () { <br>return `${this.key1} ${this.key2}`;<br>} <br><br>console.log(objectName.our methodName());<br><br>
+
+    <strong>-class-constructor method:(should be inside the class)</strong><br><br> our methodName(){ <br> return `${this.key1} ${this.key2}`;<br> }<br><br>console.log(objectName.our methodName());
+    </h6>
+    <p>===========</p>
+</div>
+
+<!-- object-description -->
+<div class="object-description">
+ <h6> <strong>-Object: </strong> we use object to describe objects in real world like people, movies,weather, glass,... <br>
+  -we can use both object and array in one object. <br> -all the data inside an object should separate with( : and ,) <br><br>
+  
+  <strong>example:</strong>
+  <br>let ObjectPerson={ <br><br> name:"Shiva", <br>gender:"female", <br><br>contact:{<br>number:12345, <br>email:"shiva@gmail.com",<br>}, <br><br>hobbies:["movies","codding","drawing"] <br><br> } <br><br>
+  <strong>-access one item in an object:</strong> <br>(main object name <strong>.</strong> item) <br>
+  -console.log(ObjectPerson.name);=> shiva <br>
+  -console.log(ObjectPerson.contact.email);=> shiva@gmail.com <br>console.log(ObjectPerson.hobbies[2]);=> drawing <br><br>
+  <strong>-add one item to an object:</strong><br>(main object name <strong>.</strong> new item=   ;) <br> ObjectPerson.age= 37;<br><br>
+ </h6>
+</div>
+
+<!-- constructor -->
+<div class="constructor">
+  <h5>constructor: <br>-when we want to have several objects that do the same things we use constructor. <br>- constructor is a <strong>function or class</strong>  that can create and return a <strong>new empty object</strong>.</h5> 
+
+  <h6><strong>-important:</strong> the first letter of constructor(function name) should start with <strong>capital letter.</strong><br><br>  
+    <strong>-in constructor we should:</strong><br><br><strong>1-make object properties(key:value): <br> this.key= parameter(as a key value);</strong><br>(that will makes(properties) <strong>key : value</strong> inside the new object) <br><strong>-this=object name</strong> <br>that means when ever we add a new argument to specific object <strong>this</strong> will change to that specific object. <br>(ex: this.firstName = person1.firstName =>shiva )<br>(ex: this.firstName = person2.firstName =>amin )<br><br>
+    
+    <strong>2- make new object:<br> let objectName= new constructorName(argument);</strong>=>( this is new object) <br>ex: let person1= new Bio("shiva","khandel");=>new object</h6>
+    <p>===============</p>
+
+    <!-- function-constructor -->
+    <h4>-function-constructor:</h4>
+  <h6><strong>-example:<br></strong>function Bio(fName,lName) {<br>this.firstName= fName;<br>this.lastName= lName;<br>} <br><br><strong>new object:</strong> let person1= new Bio("shiva","khandel");<br><strong>new object:</strong>let person2= new Bio("amin","rahmat");<br><br><strong>method:</strong>  Bio.prototype.fullName= <strong>function () {</strong> <br>return `${this.firstName} ${this.lastName}`;<br>}  <br><br>console.log(person1);=>Bio {firstName: 'shiva', lastName: 'khandel'}<br><br>console.log(person2);=>Bio {firstName: 'amin', lastName: 'rahmat'}<br></h6>
+  <h6><br>console.log(person1.fullName());=>shiva khandel<br>console.log(person2.fullName());=>amin rahmat<br></h6><br>
+
+  <!-- class-constructor -->
+  <h4>-class-constructor:</h4>
+  <h6><strong>-example:<br></strong>class Person{ <br><br> constructor(fName,lName){<br>this.firstName= fName;<br>this.lastName= lName;<br> } <br><br><strong>method: </strong>fullName(){ <br> return `${this.firstName} ${this.lastName}`; <br> } <br>} <br><br><strong>new object: </strong>let shiva= new Person("shiva","khandel");<br><strong>new object: </strong>let amin= new Person("amin","rahmat"); <br><br>console.log(shiva);=>Person {firstName: 'shiva', lastName: 'khandel'} <br>console.log(amin);=>Person {firstName: 'amin', lastName: 'rahmat'}<br>console.log(shiva.fullName());=>shiva khandel<br>console.log(amin.fullName());=>amin rahmat <br>===== </h6>
+
+</div>
+
+  <!-- making method -->
+  <div class="making-method">
+  <h4>Making our method: <br>-we can make our method and name it whatever we want. we should always <strong>()</strong> in front of the method.</h4> 
+  <p>===</p>
+  <h5><strong>-function-constructor method:</strong><br>-we should make our method outside of function-constructor.<br>
+   (because if we put the method in function-constructor <strong>js</strong> consider it as the property not method.) <br><br> functionName. prototype.our methodName= function () { <br>return `${this.key1} ${this.key2}`;<br>} <br><br>console.log(objectName.our methodName());<br><br></h5> 
+   
+   <h5><strong>-class-constructor method:</strong> we should make our method inside the class-constructor. <br><br> our methodName(){ <br> return `${this.key1} ${this.key2}`;<br> }<br><br>console.log(objectName.our methodName());</h5>
+
+   <p>===</p>
+
+  <!-- object built in method -->
+  <h6><strong>-object built in method:</strong><br><br><strong>1- object.keys(objectName): </strong><br>console.log(Object.keys(ObjectPerson));<br>=>['name', 'gender', 'contact', 'hobbies', 'age'] <br><br><strong>2-object.values(objectName)</strong> <br> console.log(Object.values(ObjectPerson)) <br>=>['Shiva', 'female', {…}, Array(3), 37] <br><br><strong>3-object.entries(objectName)</strong> <br> console.log(Object.entries(ObjectPerson));<br>=> [Array(2), Array(2), Array(2), Array(2), Array(2)] <br> ['name', 'Shiva'] <br>['gender', 'female'] <br>['contact', {…}] <br>['hobbies', Array(3)] <br>['age', 37]
+   </h6>
+  </div>
+
+  <!--window object  -->
+<div class="window-object">
+<h6><strong>window object:</strong><br>- contain all of the properties and methods that exist in global or you made them.you can see all of them by <strong>console.log(window)</strong><br>-because the window object is global you can remove the window world. <br>ex: window.console.log = console.log</h6>
+<h6><strong>-window object method:</strong><br><strong>-alert(): shows something to user in browser ex:alert("how are you?")</strong> <br><br><strong>-prompt: receive information from user. which means that user should answer the question. <br>ex:let person= prompt("what is your name ?");</strong> <br><br><strong>-confirm: check the true/false. <br>ex:if (confirm("is this your name?")) { <br>console.log("yes");<br>} else { <br> console.log("no"); <br> } <br><br><strong>-window object property:</strong><br>ex: let result; <br> result= window.location; <br>result= window.navigator;<br>result=window.Bio;(i made this before) <br>result= window.document;(shows all the html tags. we use window document in DOM to make html. ) <br><br>console.log(result); 
+  
+  
+  
+ 
+  
+  
+  
+
+ 
+  
+</strong></h6>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- start-links================================================== -->
+    <!-- bootstrap-script start -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!-- bootstrap-script end -->
+<!-- ============================================================== -->
+
+<!-- start-js-link -->
+<script src="./object.js"></script>
+<!-- end-js-link -->
+<!-- end-links===================================================== -->
+<div style="margin-bottom: 500px;"></div>
+</body>
+</html>

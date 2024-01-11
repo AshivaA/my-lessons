@@ -1,0 +1,37 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+body{
+    background-color: darkgray;
+    margin: 0;
+
+    width: 100%;
+    overflow-x: hidden;
+}
+
+
+hr{
+    border: 8px solid navy;  
+}
+/* ========= */
+
+.array-introduction{
+
+    background-color: rgb(99, 99, 181);
+    padding: 7px;
+}
+
+.normal-array-method{
+    background-color: rgb(202, 131, 80);
+    padding: 7px;
+    
+}
+
+.array-compare-function-method{
+    background-color: rgb(35, 211, 152);
+    padding: 7px;
+}

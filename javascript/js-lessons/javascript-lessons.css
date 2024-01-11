@@ -1,0 +1,116 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+body{
+    background-color: darkgray;
+    margin: 0;
+   
+    width: 100%;
+    overflow-x: hidden;
+    color: navy;
+}
+
+
+
+hr{
+    border: 8px solid navy; 
+   
+}
+/* ========= */
+
+/* js-link */
+.js-link{
+    
+    background-color: darkcyan;
+    padding: 8px;
+    
+    
+}
+
+.console-log{
+    
+    background-color: rgb(64, 158, 64);
+    padding: 8px;
+   
+}
+
+.variables{
+    
+    background-color: rgb(203, 52, 82);
+    padding: 8px;
+    
+}
+
+.data-type{
+    
+    background-color: rgb(171, 171, 68);
+    padding: 8px;
+    
+}
+
+.normal-deep-assignment{
+    
+    background-color: rgb(85, 170, 133);
+    padding: 8px;
+    
+}
+
+.datatype-numbers{
+    background-color: rgb(177, 126, 126);
+    padding: 8px;
+}
+
+
+.math-method{
+    background-color: rgb(41, 117, 117);
+    padding: 8px;
+}
+
+.datatype-string{
+    background-color: burlywood;
+    padding: 8px;
+}
+
+
+.scope{
+    background-color: cadetblue;
+    padding: 8px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.extra-explanation{
+    background-color: rgb(47, 59, 107);
+    color: rgb(34, 184, 137);
+    padding: 10px;
+}

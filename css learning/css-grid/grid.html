@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css-grid</title>
+
+      <!-- bootstrap-css--link -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+      <!-- local-css-link -->
+    <link rel="stylesheet" href="grid.css">
+</head>
+<body>
+
+<!-- =================================================================== -->  
+    <!-- bootstrap-navbar -->
+           <!-- start-bootstrap navbar ========= -->
+           <nav class="navbar navbar-expand-lg bg-success">
+            <div class="container-fluid">
+      
+              <!-- navbar logo/title/brand -->
+              <a class="navbar-brand" href="#">Logo</a>
+      
+              <!-- hamburger-menu-button -->
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+      
+              <!-- to move hamburger-menu-items to the right side we need to add justify-content-end to collapse navbar.-->
+              <div class="collapse navbar-collapse justify-content-end " id="navbarNav">
+      
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/html-learning/index.html" target="_blank">html-form</a>
+                  </li>
+    
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/html-learning/semantic.html" target="_blank">html-semantic</a>
+                  </li>
+    
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/css learning/css/csslearning.html" target="_blank">css-learning</a>
+                  </li>
+    
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/css learning/flexbox-lessons/flxbox.html" target="_blank">css-flexbox</a>
+                  </li>
+    
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/css learning/media-query/mediaquery.html" target="_blank">mediaquery</a>
+                  </li>
+    
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/css learning/css-grid/grid.html" target="_blank">css-grid</a>
+                  </li>
+    
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/css learning/css-position/position.html" target="_blank">css-position</a>
+                  </li>
+    
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/css learning/bootstrap/bootstrap.html" target="_blank">bootstrap</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/javascript/js-lessons/javascript-lessons.html" target="_blank">javascript-lessons</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/javascript/if-condition/if-condition.html" target="_blank">if/operation</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/javascript/for-while-loop/for-while-loop.html" target="_blank">for/while loop</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/javascript/array/array.html" target="_blank"> array</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/javascript/function/function.html" target="_blank"> function</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/javascript/object/object.html" target="_blank"> object</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/javascript/DOM/DOM.html" target="_blank">DOM</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/javascript/API/API.html" target="_blank">API</a>
+                  </li>
+    
+    
+                  
+                </ul>
+              </div>
+            </div>
+          </nav>
+            <!-- end-bootstrap navbar ========= -->
+
+             <!-- start-page-title -->
+            <h1 style="background-color: burlywood;">css-grid-page</h1>
+            <br>
+             <!-- end-page-title -->
+<!-- =================================================================== -->
+
+    <div style="margin-left:10px;">
+        <h1>css-grid:</h1>
+        <h4>-container div, should have always (display: grid;)</h4>
+        <h3>-everything should set for container.</h3>
+    </div>
+    
+   <div class="grid-container">
+    
+    <div class="boxes">
+        <h2>box1</h2>
+        <h4>container set on:</h4>
+        <p>  display: grid;</p>
+        <p>gap: 5px; (makes the margin for grids) </p>
+        <p>grid-template-columns: 70% 30%;</p>
+        
+    </div>
+
+    <div class="boxes">
+        <h2>box2</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis soluta adipisci velit? Quia ratione dignissimos, quo </p>
+    </div>
+
+    <div class="boxes">
+        <h2>box3</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+    </div>
+
+    <div class="boxes">
+        <h2>box4</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis soluta adipisci velit? Quia ratione dignissimos, quo repellendus nemo nihil deserunt, molestiae </p>
+    </div>
+
+    <div class="boxes">
+        <h2>box5</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis soluta adipisci velit? Quia ratione dignissimos, quo </p>
+    </div>
+
+    <h2>container</h2>
+   </div>
+   <br>
+   <hr>
+   <br>
+   <!--grid container using fr: ================ -->
+   <h2 style="margin-left:10px;">grid container using fr:</h2>
+
+   <div class="grid-container-fr">
+
+    <div id="box1">box1
+            <h4>display: grid;</h4>
+            <h4>gap: 10px;</h4>
+            <h4>grid-template-columns: 1fr 2fr;</h4>
+    </div>
+
+    <div id="box2">box2
+        <h4>I am using fraction to separate boxes.</h4>
+        <h4>1fr = one part of the whole available width.</h4>
+    </div>
+
+    <div id="box3">box3</div>
+
+    <div id="box4">box4 
+        <h4>we do not need to set the hight because, it will be automatically set depending on box container. </h4>
+    </div>
+
+    <div id="box5">box5
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus officiis suscipit deleniti vel fugit deserunt obcaecati perspiciatis impedit fugiat magnam quam quidem earum omnis nisi aut, recusandae sit? Laboriosam, alias.</p>
+    </div>
+
+    <!-- nested grid -->
+    <div id="box6">box6(with nested elements)  
+        <h5>(nested grid: means another elements in one gride box. works exactly like main container.)</h5>
+
+        <div class="box6-with-nested-elements">
+            <h3>nested grid one</h3>
+            <h3>nested grid tow</h3>
+            <h3>nested grid three</h3>
+        </div>  
+    </div>
+    <!-- ====== -->
+
+    <div id="box7">box7</div>
+
+    <h2 style="color: aqua;">container</h2>
+   </div>
+   <br>
+   <hr>
+   <br>
+   <!-- ========================== -->
+
+   <!-- div:nth-child(odd) -->
+   <h2 style="margin-left:10px;">div:nth-child(odd):</h2>
+   <div class="grid-container-boxes">
+    <div >box-1 
+    <h5>div:nth-child(odd)= the div child with odd number(1,3,5,...)</h5><br>
+         <h3>.grid-container-boxes div:nth-child(odd){
+            background-color: rgb(17, 61, 4);}</h3>
+    </div>
+
+    <div>box-2 
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, ut quis cumque minus dolores voluptatum magni distinctio est optio debitis inventore pariatur modi hic quidem vitae repudiandae, praesentium nesciunt aut?</p>
+    </div>
+    <div>box-3</div>
+    <div>box-4</div>
+   </div>
+   <br>
+   <hr>
+   <br>
+   <!-- ============================ -->
+
+   <!-- changing box position -->
+   <h2 style="margin-left:10px;">changing box position:</h2>
+   <div class="grid-img">
+    <img src="/images/css-grid-layout-module.png" alt="css-grid-lins" width="300px" height="300px">
+    <img src="/images/css-grid.png" alt="css-grid" width="300px" height="300px">
+   </div>
+  
+   <div class="grid-container-box-position">
+
+    <div class="box-1">position1
+        <h4> (1/3= start from 1 end from 3 .[all gaps count as one line not 2]) </h4>
+        <h3> grid-column: 1/3; </h3>
+        <h3> grid-row: 1/3;</h3>
+           
+           
+    </div>
+    <div class="box-2">position2
+
+        <img src="/images/css-grid-layout-module.png" alt="css-grid" width="200px" height="200px">
+
+    </div>
+    <div class="box-3">position3
+
+        <img src="/images/css-grid.png" alt="grid-lines" width="200px" height="200px">
+
+
+    </div>
+    <div class="box-4">position4
+
+            <h3>container should set on:</h3>
+            <h3> display: grid;</h3>
+            <h3>gap: 8px;</h3>
+            <h3>grid-template-columns: 1fr 2fr 1fr;</h3><br>
+            <h3> we also need to cont first the number of row and column.(col=4 row=3)</h3>
+    </div>
+    <div class="box-5">position5
+
+        <h2>if you want to have responsive grid you should keep every grid in container.</h2>
+    </div>
+
+   </div>
+  
+
+    <div style="margin-bottom: 500px;"></div>
+
+
+
+
+      <!-- bootstrap-script start -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+      <!-- bootstrap-script end -->
+</body>
+</html>

@@ -1,0 +1,58 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+body{
+    background-color: darkgray;
+    margin: 0;
+
+    /* width: 100%; */
+    overflow-x: hidden;
+    color: navy;
+}
+
+
+hr{
+    border: 8px solid navy; 
+   
+}
+/* ========= */
+.function-syntax{
+    background-color: goldenrod;
+    padding: 7px;
+}
+.function-introduction{
+
+    background-color: rgb(91, 179, 149);
+    padding: 7px;
+}
+
+.arrow-function{
+    background-color: rgb(118, 118, 159);
+    padding: 7px;
+}
+
+.different-kind-of-function{
+    background-color: rgb(227, 139, 76);
+    padding: 7px;
+}
+
+.hoisting{
+    background-color: rgb(114, 175, 79);
+    padding: 7px;
+
+}
+
+
+.function-parameters{
+    background-color: rgb(126, 126, 155);
+    padding: 7px;
+}
+
+.spread{
+    background-color: rgb(163, 81, 108);
+    padding: 7px;
+}

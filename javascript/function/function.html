@@ -1,0 +1,266 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+
+     <!-- bootstrap-css--link -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+     <!-- local-css-link -->
+    <link rel="stylesheet" href="function.css">
+</head>
+<body>
+
+<!-- =================================================================== -->
+     <!-- bootstrap-navbar -->
+           <!-- start-bootstrap navbar ========= -->
+           <nav class="navbar navbar-expand-lg bg-success" width: 100%;>
+            <div class="container-fluid">
+      
+              <!-- navbar logo/title/brand -->
+              <a class="navbar-brand" href="#">Logo</a>
+      
+              <!-- hamburger-menu-button -->
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+      
+              <!-- to move hamburger-menu-items to the right side we need to add justify-content-end to collapse navbar.-->
+              <div class="collapse navbar-collapse justify-content-end " id="navbarNav">
+      
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/html-learning/index.html" target="_blank">html-form</a>
+                  </li>
+    
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/html-learning/semantic.html" target="_blank">html-semantic</a>
+                  </li>
+    
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/css learning/css/csslearning.html" target="_blank">css-learning</a>
+                  </li>
+    
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/css learning/flexbox-lessons/flxbox.html" target="_blank">css-flexbox</a>
+                  </li>
+    
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/css learning/media-query/mediaquery.html" target="_blank">mediaquery</a>
+                  </li>
+    
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/css learning/css-grid/grid.html" target="_blank">css-grid</a>
+                  </li>
+    
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/css learning/css-position/position.html" target="_blank">css-position</a>
+                  </li>
+    
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/css learning/bootstrap/bootstrap.html" target="_blank">bootstrap</a>
+                  </li>
+    
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/javascript/js-lessons/javascript-lessons.html" target="_blank">javascript-lessons</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/javascript/if-condition/if-condition.html" target="_blank">if/operation</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/javascript/for-while-loop/for-while-loop.html" target="_blank">for/while loop</a>
+                  </li>
+
+                  
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/javascript/array/array.html" target="_blank"> array</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/javascript/function/function.html" target="_blank"> function</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/javascript/object/object.html" target="_blank"> object</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/javascript/DOM/DOM.html" target="_blank">DOM</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/javascript/API/API.html" target="_blank">API</a>
+                  </li>
+    
+                  
+                </ul>
+              </div>
+            </div>
+          </nav>
+            <!-- end-bootstrap navbar ========= -->
+           
+            <!-- start-page-title -->
+            <h1 style="background-color: burlywood; padding: 8px;">Function-page</h1>
+            <br>
+            <!-- end-page-title -->
+<!-- =================================================================== -->
+
+
+<div class="function-syntax">
+
+  <h3>-function-syntax:</h3>
+  <h6>function funName(parameter1,parameter2){<br>code to be executed <br>}<br> funName(arguments);<br><br></h6>
+
+  <h3>-rest parameter syntax:(should be in parameters)</h3>
+  <h6>function sum <strong>(...rest parameter)</strong> {<br>let result = 0;<br>for (let arguments of rest parameter){ <br>result += arguments; <br> }<br>return result;<br> } <br><br>console.log(sum(arguments)); <br><br></h6>
+ 
+  <h3>-spread syntax:(should be in arguments as an array)</h3>
+  <h6><strong>let spreadArray</strong>= [2,3];<br>function Sum(...restParameter) {<br>let result= 0;<br> for (const arguments of restParameter) { <br>result+= arguments;<br> result= [1,...spreadArray,4];<br> } <br>return result; <br>} <br><br>console.log(Sum(1,<strong>...spreadArray</strong>,5));=>11 <br>console.log(Sum(<strong>...spreadArray</strong>));=>[1, 2, 3, 4]</h6>
+
+
+</div>
+
+
+
+
+
+<div class=" function-introduction">
+  <h3>function-introduction:</h3>
+
+  <h6> <!-- function -->
+    <strong>-function: </strong> when we want to use a part of code several times we use function. <br><strong>-we always need to call function to execute by [function name ();]</strong> <br><br><strong>example:</strong> <br> function dataTypFunction { <br>console.log("Hi function"); <br> } <br><br>dataTypFunction();
+
+    <br><br><strong>-add parameters and argument to a function: </strong> <br> -we should declare the parameters first and then initialize them on argument.<br><br> function functionName (parameters [ex:name]) { <br> <br> } <br><br>functionName(argument [ex:shiva]);<br><br><strong>example:</strong><br>
+    function addParametersAndArgument( <strong>create parameters here:</strong> pName,pAge) { <br> <br><strong>call parameters here:</strong><br>console.log( "i am " + pName +" and I have "+ pAge); <br><br>} <br><br>addParametersAndArgument( <strong>create arguments here:</strong>"arName-Shiva", "arAge-37");<br>addParametersAndArgument("arName-Amin", "arAge-38");<br>
+    addParametersAndArgument("arName-Ahoora", "arAge-11");
+    <br> <strong>arguments shows in console=>Iam (arName)shiva and I have (arAge) 37</strong>
+
+    <br><br><strong>-Return word in function: </strong><br>to show the result on console we should use  the word <strong>return</strong> in function. <br><br> <strong>example:</strong><br> function square(PNumber) {<br><strong>return</strong> PNumber * PNumber;<br> } <br><br>console.log(square(3)); => 9<br>console.log(square(5));  => 25<br>console.log(square(4));  => 16
+</h6> <br>
+
+<h5 style="color: darkred;"> important: <br>-we should check if our function is working or not by testing it to show a text in console. <br>ex: console.log("this function is working") </h5>
+</div>
+
+<!-- arrow function -->
+<div class="arrow-function">
+  <h3>-Arrow function:(is a shorter way to write function.)</h3>
+<h6>let Numbers= [3,91,7,67,0,52,40];<br><br><strong>-normal function:</strong> <br>variable name to store the result= Array name.function method(function(params) { <br>return= parameter <br>}) <br>
+  
+<br>result= Numbers.sort(function(x,y){ <br>return x-y; <br>});<br> <br><strong>-remove function word and add => after parentheses.</strong> <br>result= Numbers.sort((x,y) => { <br>return x-y; <br>}); <br><br><strong>-we can also remove( return/ ; / {} ) if our function has only one parameter</strong> <br>result= Numbers.sort((x,y) => x-y);</h6>
+</div>
+
+<!-- different kind of function -->
+<div class="different-kind-of-function">
+  <h3>-different kind of function:</h3>
+  <h6><strong>1-function declaration: </strong>
+    <br>function funName (parameter) { <br>return parameter <br> } <br>console.log(funName(argument)); 
+    <br><br>ex:function sum (a, b) { <br>return a+b <br> }<br>console.log(sum(2,5));
+  </h6><br>
+
+  <h6><strong>2-function expression: </strong>
+    <br>let funResult= function (parameter) { <br>return parameter <br> } <br>console.log(funResult(argument));
+    <br><br>ex:let fuResult= function (a,b) { <br>return a+b <br> }<br> console.log(fuResult(3,6));
+  </h6>
+</div>
+
+<!-- hoisting -->
+<div class="hoisting">
+  <h3>-Hoisting:(means: moving all declarations to the top of the current scope)</h3><h6>(we can use hoisting only for function declaration means call the function by name)</h6>
+
+  <h6> <strong>example:</strong><br><br>
+
+    <strong>-hoisting function call:</strong><br>
+    <strong>function declaration: <br> call function name => it works </strong><br><br>
+    <strong>function expression: <br> call let fuResult;=>get error</strong><br><br>
+
+    <p style="color: darkred;"><strong>important:</strong><br>we can call function declaration every where in code because we use only function name but we can only call function expression after function because we store result in another variable.
+    </p>
+
+    <br><br><strong>function declaration:</strong>
+    <br>ex:function sum (a, b) { <br>return a+b <br> }<br> <strong>-normal function call:</strong>console.log(sum(2,5));<br><br>
+
+
+    <strong>function expression:</strong>
+    <br>ex:let fuResult= function (a,b) { <br>return a+b <br> }<br> <strong>-normal function call:</strong>console.log(fuResult(3,6));
+  
+  </h6>
+</div>
+
+
+
+
+
+<div class="function-parameters">
+  <h3>function-parameters:</h3>
+
+  <h6>
+     <strong>1-function myFunction(x, y = 10) {</strong> <br>return x + y; <br> } <br><br>console.log(myFunction(5));=>15 <br>(If y is not passed or undefined, then y = 10) <br><br>
+<!-- rest======== -->
+     <strong>2-rest parameter syntax:</strong> <br>function sum(...rest parameter) {<br>let result = 0;<br>for (let arguments of rest parameter){ <br>result += arguments; <br> }<br>return result;<br> } <br><br>console.log(sum(arguments)); <br><br>
+
+     <h6><strong>-rest:(should be in parameter)</strong><br>
+      - will store the <strong>rest arguments</strong> in rest parameter(...varName)<strong> as an array</strong>, when the number of arguments is more than parameter <br>-(...varName) should be the latest parameter. <br><br>
+  
+      <strong>-rest meaning:</strong><br>function bio(fName, lName,...otherInfo) {<br><br>return otherInfo;=>['web dvp', 'artist'] <br> return [fName, lName,...otherInfo]; =>['shiva', 'khandel', 'web dvp', 'artist'] <br>} <br><br>console.log(bio("shiva", "khandel", "web dvp","artist" ));<br> ...otherInfo = ...varName (is an array that store extra argument) <br><br>
+  
+      <strong>-rest ex:</strong>
+      <br> function sum(a,b,...restParameter) { <br> let result= 0; ( result start counting from 0)<br><br>for (let arguments of restParameter) { <br> result+= arguments;<br> } <br>return result; <br> } <br><br>console.log(sum(1,3,2,5));=>6 <br>a=1 <br>b=3 <br>2+4=...restParameter
+    </h6>
+      
+  </h6>
+</div>
+
+<!--spread ============-->
+<div class="spread">
+
+  <h3>-spread:(should be in argument)</h3>
+
+  <h6><strong>will <strong>expands array items </strong>in(...varName) in argument<br>-we can only use it in an object literal (like array or string) <br>-( ...spreadArray) can be at first or in the middle of arguments</strong> <br><br>
+
+    <strong>-spread syntax in array:</strong><br><br>let Array1= [1,2,3,4,5]; <br>let Array2= [...Array1, 6,7,8,9,10];=>[1, 2, 3, 4, 5, 6]<br>let Array2= [10,20,30,...Array1, 6,7,8,9,10];=>[20, 30, 1, 2, 3, 6, 7, 8] <br><br>console.log(Array2);<br><br>
+
+    <strong>-spread syntax in function:(should be an array)</strong> <br><br><strong>let spreadArray</strong>= [2,3];<br>function Sum(...restParameter) {<br><br>let result= 0;<br> for (const arguments of restParameter) { <br>result+= arguments;<br> result= [1,...spreadArray,4];<br> } <br>return result; <br>} <br><br>console.log(Sum(1,<strong>...spreadArray</strong>,5));=>11 <br>console.log(Sum(<strong>...spreadArray</strong>));=>[1, 2, 3, 4]
+
+  
+  </h6>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- start-links================================================== -->
+    <!-- bootstrap-script start -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!-- bootstrap-script end -->
+<!-- ============================================================== -->
+
+<!-- start-js-link -->
+<script src="./function.js"></script>
+<!-- end-js-link -->
+<!-- end-links===================================================== -->
+<div style="margin-bottom: 500px;"></div>
+</body>
+</html>

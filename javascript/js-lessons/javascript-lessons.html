@@ -1,0 +1,330 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript-lessons</title>
+
+     <!-- bootstrap-css--link -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+     <!-- local-css-link -->
+    <link rel="stylesheet" href="javascript-lessons.css">
+</head>
+<body>
+
+<!-- =================================================================== -->
+     <!-- bootstrap-navbar -->
+           <!-- start-bootstrap navbar ========= -->
+           <nav class="navbar navbar-expand-lg bg-success" width: 100%;>
+            <div class="container-fluid">
+      
+              <!-- navbar logo/title/brand -->
+              <a class="navbar-brand" href="#">Logo</a>
+      
+              <!-- hamburger-menu-button -->
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+      
+              <!-- to move hamburger-menu-items to the right side we need to add justify-content-end to collapse navbar.-->
+              <div class="collapse navbar-collapse justify-content-end " id="navbarNav">
+      
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/html-learning/index.html" target="_blank">html-form</a>
+                  </li>
+    
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/html-learning/semantic.html" target="_blank">html-semantic</a>
+                  </li>
+    
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/css learning/css/csslearning.html" target="_blank">css-learning</a>
+                  </li>
+    
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/css learning/flexbox-lessons/flxbox.html" target="_blank">css-flexbox</a>
+                  </li>
+    
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/css learning/media-query/mediaquery.html" target="_blank">mediaquery</a>
+                  </li>
+    
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/css learning/css-grid/grid.html" target="_blank">css-grid</a>
+                  </li>
+    
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/css learning/css-position/position.html" target="_blank">css-position</a>
+                  </li>
+    
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/css learning/bootstrap/bootstrap.html" target="_blank">bootstrap</a>
+                  </li>
+    
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/javascript/js-lessons/javascript-lessons.html" target="_blank">javascript-lessons</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/javascript/if-condition/if-condition.html" target="_blank">if/operation</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/javascript/for-while-loop/for-while-loop.html" target="_blank">for/while loop</a>
+                  </li>
+
+                  
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/javascript/array/array.html" target="_blank"> array</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/javascript/function/function.html" target="_blank"> function</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/javascript/object/object.html" target="_blank"> object</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/javascript/DOM/DOM.html" target="_blank">DOM</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/javascript/API/API.html" target="_blank">API</a>
+                  </li>
+    
+                  
+                </ul>
+              </div>
+            </div>
+          </nav>
+            <!-- end-bootstrap navbar ========= -->
+           
+            <!-- start-page-title -->
+            <h1 style="background-color: burlywood; padding: 8px;">javascript-lessons-page</h1>
+            <br>
+            <!-- end-page-title -->
+<!-- =================================================================== -->
+<!-- start-links-description=========== -->
+<div class="js-link">
+    <h2>js-link:</h2>
+    <h6>-javascript-links should be always at the end of th html page exactly before body closing tab.</h6>
+    <h5>ex:(script src="./javascript-lessons.js")</h5>
+    <h6>to check:add <strong>alert("link is working");</strong> to js page.</h6>
+</div>
+<!-- end-links-description=========== -->
+
+<!-- start-console.log=========== -->
+<div class="console-log">
+    <h2>console.log:</h2>
+    <h6>we use <strong>console.log();</strong>  to check and debug js code. we should open inspect and go to console page.</h6>   
+</div>
+<!-- end-console.log=========== -->
+
+<!-- start-variables=========== -->
+<div class="variables">
+    <!-- var -->
+    <h2>variables:</h2>
+    <h6> <strong>-var:</strong> is a global variable. you can access it on entire the code. <strong>ex:var number = 30;</strong></h6> 
+    
+    <!-- const -->
+    <h6> <strong>-const:</strong> you <strong>can not</strong> change the variable with the same variable name.. <strong>ex:var number = 30;</strong></h6> 
+
+     <!-- let -->
+     <h6> <strong>-let:</strong> we can change let variables , using only variable name.<br><strong> ex: (let age; ) or (let age = 40;) ( let mention once) <br>age = 60; <br>age = 70; <br>age = 90; (call it with name for how many times you want.)</strong></h6>
+     <h6>(we mention <strong>let+variable name only once</strong>, and to change the variable we only need to call variable name. )</h6>
+
+</div>
+<!-- end-variables=========== -->
+
+<!-- start-data-type-=========== -->
+<div class="data-type">
+    <h2> Data types: </h2>
+    <h6> <strong>-how to check datatype of a variable:</strong> <br> typeof + variable name <br>ex: let age=40; <br><strong>console.log(  typeof age);</strong> </h6>
+    
+    <h4>we have 2 types of datatype: 1-primitive/ 2-reference</h4><br>
+    <h5>1-primitive:</h5>
+    <h6>
+        
+         <br><strong>-string:</strong> all text are string and should written between ("" or '' )(ex:"this is string" )
+         <br><strong>-number:</strong> all number (decimal(2.3) or integer (34)) consider as number.   
+         <br><strong>-boolean:</strong> true/false  
+         <br><strong>-undefined:</strong> when we only declaration an empty variable the data type is undefined.(ex: let number;)
+         <br><strong>-null:</strong> null shows as object.
+         <br><strong>-empty:</strong> when we have an empty string datatype is still string but it is empty.(ex: let name="");
+
+    </h6>
+    <br> 
+
+    <h5>2-reference:</h5>
+
+    <h6> 
+      <!-- array -->
+        <br><strong>-Array: </strong> is a collection of values. they can be the same or different datatype. but it is better to use only one of datatype in an array. <br>ex: let number=[1,4,90]; or let collection=[4,"text",true]; <br><strong>example:</strong> <br>this is our array shows in console: (3) [2,"text",true] <br>-if we consider an array as a hotel, the values inside in, should assume as the guests of each hotel rooms or <strong>index</strong> so: <br>-(3) is: the length of an array (the hotel has 3 rooms) <br>-(0:2) means: (the index of 2 is 0) or (2 is in room number 0) <br>-(1:'text') means: (the index of 'text' is 1) or ('text' is in room number 1) <br>-(2:true) means: (the index of true is 2) or (true is in room number 2)  <br><strong>(we have index only in array)</strong><br> <br>
+        <strong>-access the special value:</strong> <br>
+        to access the special array value we need index number ex: <br> console.log(dataTypArray [0]); = 2 <br>
+        console.log(dataTypArray [1]); = 'text' <br>
+        console.log(dataTypArray [2]); = true <br> <br>
+
+        <strong>-add or replace a value in an array:</strong> <br>
+        we only need to change the index: <br><strong>add:</strong><br> (dataTypArray [3] = 77;) in console we have: (4) [2,"text",true,77]<br>
+        <br><strong>replace:</strong><br> (dataTypArray [2] = false;) in console we have: (4) [2,"text",false,77]<br>==================<br><br>
+       
+      <!-- object -->
+        <strong>-Object: </strong> we use object to describe objects in real world like people, movies,weather, glass,... <br>
+        -we can use both object and array in one object. <br> -all the data inside an object should separate with( : and ,) <br><br>
+        <strong>example:</strong>
+        <br>let dataTypObjectPerson={ <br><br> name:"Shiva", <br>gender:"female", <br><br>contact:{<br>number:12345, <br>email:"shiva@gmail.com",<br>}, <br><br>hobbies:["movies","codding","drawing"] <br><br> } <br><br>
+        <strong>-access one item in an object:</strong> <br>(object name <strong>.</strong> item) <br>
+        -console.log(dataTypObjectPerson.name);=> shiva <br>
+        -console.log(dataTypObjectPerson.contact.email);=> shiva@gmail.com <br>console.log(dataTypObjectPerson.hobbies[2]);=> drawing <br><br>
+        <strong>-add one item to an object:</strong><br>(object name <strong>.</strong> new item=   ;) <br> dataTypObjectPerson.age= 37;
+        <br>==================<br><br>
+      <!-- function -->
+        <strong>-function: </strong> when we want to use a part of code several times we use function. <br><strong>-we always need to call function to execute by [function name ();]</strong> <br><br><strong>example:</strong> <br> function dataTypFunction { <br>console.log("Hi function"); <br> } <br><br>dataTypFunction();
+
+        <br><br><strong>-add parameters and argument to a function: </strong> <br> -we should declare the parameters first and then initialize them on argument.<br><br> function functionName (parameters [ex:name]) { <br> <br> } <br><br>functionName(argument [ex:shiva]);<br><br><strong>example:</strong><br>
+        function addParametersAndArgument( <strong>create parameters here:</strong> pName,pAge) { <br> <br><strong>call parameters here:</strong><br>console.log( "i am " + pName +" and I have "+ pAge); <br><br>} <br><br>addParametersAndArgument( <strong>create arguments here:</strong>"arName-Shiva", "arAge-37");<br>addParametersAndArgument("arName-Amin", "arAge-38");<br>
+        addParametersAndArgument("arName-Ahoora", "arAge-11");
+        <br> <strong>arguments shows in console=>Iam (arName)shiva and I have (arAge) 37</strong>
+
+        <br><br><strong>-Return word in function: </strong><br>to show the result on console we should use  the word <strong>return</strong> in function. <br><br> <strong>example:</strong><br> function square(PNumber) {<br><strong>return</strong> PNumber * PNumber;<br> } <br><br>console.log(square(3)); => 9<br>console.log(square(5));  => 25<br>console.log(square(4));  => 16
+    </h6> <br>
+    
+
+</div>
+<!-- end-data-type=========== -->
+
+<!-- normal and deep assignment -->
+<div class="normal-deep-assignment">
+    <h2>Assignment:</h2>
+    <h5>-we have 2 kind of assignment normal and deep.</h5>
+    <h6><strong>example:</strong><br>let person={name:"shiva"} <br>let anotherPerson;<br><br> <strong>-normal assignment is:( anotherPerson=person; )</strong> <br>when we assign 2 variables in normal way, and chang one of them, then all the variable value will chang to the new one.<br><br>anotherPerson=person;<br>anotherPerson.name ="amin"; <br><br>console.log(person);=> {name:"amin"}<br>console.log(anotherPerson);=> {name:"amin"} <br><br>
+
+    <strong>-deep assignment is: [ anotherPerson=Object.assign ({}, person); ]</strong> <br> when we set [Object.assign ({}, person)] for second variable,  then the new value stack on new object or array. <br><br>anotherPerson= Object.assign({}, person); <br>anotherPerson.name="amin"; <br><br> console.log(person);=> {name:"shiva"}<br>console.log(anotherPerson);=> {name:"amin"} <br><br><strong>exactly the same for array:</strong> <br>  let DpNumber=[1,8,46,9];<br>
+    let newDpNumber; <br><br> newDpNumber= Object.assign([], DpNumber);<br>newDpNumber[2]=100; <br>console.log(DpNumber);=> (4) [1,8,46,9] <br>console.log(newDpNumber); => (4) [1,8,100,9]
+       
+    </h6>  
+</div>
+
+
+<!-- start-datatype numbers=========== -->
+<div class="datatype-numbers">
+    <h2> datatype numbers:</h2><br>
+    <h6><strong>example:</strong><br>
+        let num1= 4;<br>let num2= 3;<br>let result;<br><br>
+        -result= num1 % num2;=>means(4/3=1)<br>
+        -result= num1 ** num2;=>means(4*4*4=64)<br>-----------<br><br>
+
+        <strong> -Using ( ) in operation:</strong> <br>-if we want to do multiple operation at the same time we should use <strong>( )</strong>  for the operation that we want to execute first.<br> <strong>example:</strong>  <br>-result= (num1+ num2) *num1; =>means: (4+3) *4= 28<br>-result= (num1 * num2) +num1; =>means: (4*3) +4= 16 <br>------------<br><br>
+
+        <strong>-write shorter operation: (+= , *= , /=,...) <br>example:</strong><br> firstResult= num1+ num2; <br>firstResult=7; <br><br>firstResult +=3 =>means: [newResult= firstResult +3]=> 10 <br>firstResult *=2 =>means: [newResult= firstResult *2]=> 14 <br>------------<br><br>
+
+        <strong>++ After or Before a variable:</strong> <br>( in this example the answer should be 8+1=9)<br><br>
+
+        <strong>++ After variable:(better use this one)</strong><br>FirstResult=8 <br>console.log(FirstResult++);=>8 <br>FirstResult++; <br>console.log(FirstResult++);=>9 <br><br>-when we add ++ after a variable <strong> we should declare a new variable to stack new result</strong> because 1 number will add to variable  but the result will stack on new variable. <br><br> 
+
+        <strong>++ Before variable:</strong> <br>FirstResult=8 <br>console.log(++FirstResult);=>9 <br>FirstResult++; <br>console.log(FirstResult++);=>10 <br><br>-when we add ++ before a variable <strong> we do not need to declare a new variable to stack new result (because will add 1 tow times)</strong> because 1 number will add to variable and at the same time will update. <br>------------<br><br>
+        <strong>- how to write event/odd number in code: <br></strong>
+        let i=0; <br>event number:( i%2 === 0 ) <br>odd number: ( i%2 !== 0 )
+
+    </h6>   
+</div>
+<!-- end-datatype-numbers=========== -->
+
+
+<!-- start-math method=========== -->
+
+<div class="math-method">
+  <h2>Math-method:</h2>
+
+  <strong>-Math.round (): [integer from up or down]</strong> <br>-chang the number to nearest integer from up or down.<br> <strong>resultMath = Math.round(3.8); =>4 <br>resultMath = Math.round(7.2); =>7</strong><br><br>
+
+  <strong>-Math.ceil (): [integer from up]</strong> <br>-chang the number to nearest integer number from up.<br> <strong>resultMath = Math.ceil(7.2); =>8 <br>resultMath = Math.ceil(4.1); =>5</strong><br><br>
+
+  <strong>-Math.floor (): [integer from down]</strong> <br>-chang the number to nearest integer number from down. <br> <strong>resultMath = Math.floor(8.9); =>8 <br>resultMath = Math.floor(2.8);; =>2</strong><br><br>
+
+  <strong>-Math.random ():</strong> <br>-makes random number. <br> <strong>resultMath = Math.random(); =>0.8456782847681 </strong><br><br>
+
+</div>
+
+<!-- end-math method=========== -->
+
+<!-- start-datatype-string============== -->
+
+<div class="datatype-string">
+  <h2>datatype-string:</h2>
+
+  <strong>-backtick: [ `text ${variable name} `]</strong> <br>we use backtick to concat text and variables. <br><br>let name= "shiva" <br>let job="web developer" <br>let age= 37; <br><br> let result= `my name ia ${name} Iam ${job}, I am ${age}.`<br> console=> my name is shiva I am web developer, I am 37.
+
+</div>
+
+<!-- end-datatype-string============== -->
+
+
+<!-- start-scope=========== -->
+<hr>
+<div class="scope">
+    <h3>scope: <br>means: the area that you can access a variable in code. <br><strong>var</strong>=> we use( var variable name=... ;)  for global and function scop.<br><strong>let/const</strong>=> we use( let/const variable name=... ;) only for block scop.</h3>
+
+    <h6><strong>-global scope (var) :</strong> (means: variable  should be only in main page.) <br> <br> <strong>ex:</strong><br>var globalVariable= "global scope"; <br><br>function glScop() { <br>console.log(`you can access globalVariable inside or outside a function`) <br> } <br><br>console.log(`you can access globalVariable inside or outside a function`);<br><br>glScop() <br><br>
+    -you can access the variable <strong> in entire the code</strong>  means inside or outside the function or if.</h6>
+    <p>============</p>
+
+    <h6><strong>-function scope (var):</strong>(means: variable should be <strong>only inside the function not inside if or loop into the function</strong> ) <br>-you can access the variable <strong>only inside the function.</strong> <br><br>function fuScop() {<br><br>var functionVariable= "function scope";<br> console.log(`you can access functionVariable only inside the function`);<br>} <br><br>fuScop()
+    </h6>
+    <p>============</p>
+
+    <h6><strong>-block scope (let/const):</strong>(means: variable should be <strong>only inside the block{} like if or for loop</strong> ) <br>-you can access the variable <strong>only inside the block{} like if or for loop.</strong> 
+    <br><br>function blScop() { <br><br> if (true) { <br> let blockVariable= "block scope"; <br> console.log(` access the ${blockVariable} is  only  inside a block{}`); <br>} <br>} <br>
+      <br> blScop()
+    </h6>
+
+</div>
+<!-- end-scope=========== -->
+
+
+<!-- start-extra-explanation=========== -->
+<hr>
+<div class="extra-explanation">
+    <h2>extra-explanation:</h2>
+
+    <h6><strong>-declaration:</strong> means only create a variable. ex:(let age; )</h6>
+
+    <h6><strong>-initialization:</strong> means set an amount for a variable ex:(let age = 40;)</h6> 
+
+    <h6><strong>-iterate:</strong> means repetition</h6> 
+   
+</div>
+<!-- end-extra-explanation=========== -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- start-links================================================== -->
+    <!-- bootstrap-script start -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!-- bootstrap-script end -->
+<!-- ============================================================== -->
+
+<!-- start-js-link -->
+<script src="./javascript-lessons.js"></script>
+<!-- end-js-link -->
+<!-- end-links===================================================== -->
+<div style="margin-bottom: 500px;"></div>
+</body>
+</html>

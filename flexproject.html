@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex-project</title>
+    <!-- bootstrap-css--link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- local-css-link -->
+    <link rel="stylesheet" href="flexproject.css">
+</head>
+<body>
+
+<!-- =================================================================== -->  
+            <!-- bootstrap-navbar -->
+           <!-- start-bootstrap navbar ========= -->
+    <nav class="navbar navbar-expand-lg bg-success">
+        <div class="container-fluid">
+  
+          <!-- navbar logo/title/brand -->
+          <a class="navbar-brand" href="#">Logo</a>
+  
+          <!-- hamburger-menu-button -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+  
+          <!-- to move hamburger-menu-items to the right side we need to add justify-content-end to collapse navbar.-->
+          <div class="collapse navbar-collapse justify-content-end " id="navbarNav">
+  
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/html-learning/index.html" target="_blank">html-form</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/html-learning/semantic.html" target="_blank">html-semantic</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/css learning/css/csslearning.html" target="_blank">css-learning</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/css learning/flexbox-lessons/flxbox.html" target="_blank">css-flexbox</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/css learning/media-query/mediaquery.html" target="_blank">mediaquery</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/css learning/css-grid/grid.html" target="_blank">css-grid</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/css learning/css-position/position.html" target="_blank">css-position</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/css learning/bootstrap/bootstrap.html" target="_blank">bootstrap</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/javascript/js-lessons/javascript-lessons.html" target="_blank">javascript-lessons</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/javascript/if-condition/if-condition.html" target="_blank">if/operation</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/javascript/for-while-loop/for-while-loop.html" target="_blank">for/while loop</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/javascript/array/array.html" target="_blank"> array</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/javascript/function/function.html" target="_blank"> function</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/javascript/object/object.html" target="_blank"> object</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/javascript/DOM/DOM.html" target="_blank">DOM</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/javascript/API/API.html" target="_blank">API</a>
+              </li>
+
+
+              
+            </ul>
+          </div>
+        </div>
+      </nav>
+        <!-- end-bootstrap navbar ========= -->
+
+           <!--start-page-title  -->
+        <h1 style="background-color: burlywood;">flexbox-project-page</h1>
+        <br>
+           <!--end-page-title  -->
+<!-- =================================================================== -->
+
+           
+    <!--header -->
+    <header class="header">
+        <div class="container-header-parents">
+            <!-- text dev -->
+            <div>
+                <h1>header container</h1>
+                <p>if you want to change the picture on the other side of page you need to put text on a separate [div] and image should not to be in text div and all of them should be in div container <br>parents element should set on [dispay:flex].</p>
+            </div>
+
+            <!-- image -->
+            <img src="/images/Spring-desk.webp" alt="coffee" width="200px" height="200px">
+
+        </div>
+    </header>
+
+    <!-- section -->
+    <section class="section">
+        <div class="container">
+
+            <div class="box">
+                <h2>box one(media query)</h2>
+                <p>for media query [(display: flex) should chang to (flex direction: column)] in container parents.</p>
+            </div>
+
+            <div class="box">
+                <h2>box tow</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam inventore explicabo hic itaque amet laborum perspiciatis impedit dolorem placeat aliquam, soluta atque voluptatem fugit, rerum magnam, ipsum tempore voluptatibus non.</p>
+            </div>
+
+            <div class="box">
+                <h2>box three</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam inventore explicabo hic itaque amet laborum perspiciatis impedit dolorem placeat aliquam, soluta atque voluptatem fugit, rerum magnam, ipsum tempore voluptatibus non.</p>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <!-- bootstrap-script start -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!-- bootstrap-script end -->
+</body>
+</html>

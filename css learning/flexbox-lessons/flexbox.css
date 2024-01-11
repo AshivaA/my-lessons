@@ -1,0 +1,207 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: lightgray;
+}
+
+hr{
+    height: 3px;
+    background-color: black;
+}
+
+
+/* ===================================== */
+
+.parents-flex-container{
+   /* parents-flex should have display flex */
+   display: flex;
+   background-color: burlywood;
+   margin: 10px;
+
+}
+
+.children-flex{
+    width: 100px;
+    height: 100px;
+    background-color: cadetblue;
+    margin: 10px;
+    float: left;
+}
+/* =========================================== */
+
+
+/* justify-content============================== */
+.parents-flex-container-justify-content{
+    /* parents-flex should have display flex */
+    display: flex;
+    background-color: rgb(8, 95, 33);
+    color: rgb(236, 191, 133);
+    margin: 10px;
+    /* ============ */
+    /* justify- content moves element in axis x(left to right) */
+    justify-content: end;
+ }
+
+ .children-flex-ex1{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(228, 200, 13);
+    color: black;
+    margin: 10px;
+    float: left;
+}
+/* ================================= */
+
+/* align-items======================= */
+ .parents-flex-container-align-items1{
+    /* parents-flex should have display flex */
+    display: flex;
+    background-color: rgb(8, 95, 33);
+    color: rgb(236, 191, 133);
+    margin: 10px;
+    /* ============ */
+     /* align-items moves element in axis y(up to down) */
+    height: 200px;
+    align-items:end;
+ }
+ 
+ .children-flex-align1-1{
+     width: 190px;
+     height: 60px;
+     background-color: rgb(228, 200, 13);
+     color: black;
+     margin: 10px;
+     float: left;
+     /* ============ */
+     align-self: start;
+     text-align: center;
+ }
+
+ .children-flex-align1-2{
+    width: 190px;
+    height: 60px;
+    background-color: rgb(228, 200, 13);
+    color: black;
+    margin: 10px;
+    float: left;
+    /* ============ */
+    align-self: center;
+    text-align: center;
+}
+
+.children-flex-align1-3{
+    width: 190px;
+    height: 60px;
+    background-color: rgb(228, 200, 13);
+    color: black;
+    margin: 10px;
+    float: left;
+    /* ============ */
+    align-self: end;
+    text-align: center;
+}
+
+/* align-items2 */
+.parents-flex-container-align-items2{
+    /* parents-flex should have display flex */
+    display: flex;
+    background-color: rgb(8, 95, 33);
+    color: rgb(236, 191, 133);
+    
+    /* ============ */
+    padding: 10px;
+    align-items: flex-start;
+ }
+ 
+ .children-flex-align2-1{
+     
+     background-color: rgb(228, 200, 13);
+     color: black;
+     border: 3px solid;
+     /* ============ */
+     text-align: center;
+     flex: 2;
+     order: 2;
+ }
+
+ .children-flex-align2-2{
+   
+    background-color: rgb(228, 200, 13);
+    color: black;
+    border: 3px solid;
+    /* ============ */
+    text-align: center;
+    flex: 4;
+    order: 1;
+
+}
+
+.children-flex-align2-3{
+    
+    background-color: rgb(228, 200, 13);
+    color: black;
+    border: 3px solid;
+    /* ============ */
+    text-align: center;
+    flex: 1;
+    order: 3;
+}
+ /* ======================================= */
+
+ /* flex-direction============================== */
+.parents-flex-direction{
+    /* parents-flex should have display flex */
+    display: flex;
+    background-color: rgb(8, 95, 33);
+    color: rgb(236, 191, 133);
+    margin: 10px;
+    /* ============ */
+   flex-direction: column;
+    
+ }
+
+ .children-flex-direction{
+    width: 600px;
+    height: 60px;
+    background-color: rgb(228, 200, 13);
+    color: black;
+    margin: 10px;
+    float: left;
+    /* ======== */
+    /* because the text is the child of children element, we can set the display:flex for children to change the text direction in an element. */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+   
+}
+/* ================================= */
+
+
+ /* flex-wrap============================== */
+ .parents-flex-wrap{
+    /* parents-flex should have display flex */
+    display: flex;
+    background-color: rgb(8, 95, 33);
+    color: rgb(236, 191, 133);
+    margin: 10px;
+    /* ============ */
+   flex-wrap: wrap;
+    
+ }
+
+ .children-flex-wrap{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(228, 200, 13);
+    color: black;
+    margin: 10px;
+    float: left; 
+}
+/* ================================= */
+

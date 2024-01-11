@@ -1,0 +1,41 @@
+
+*{
+    margin: 0;
+    padding: 0;  
+}
+
+body{
+    background-color: rgba(65, 117, 123, 0.467);
+    margin: 0;
+
+    width: 100%;
+    overflow-x: hidden;
+}
+
+div{ 
+    padding: 7px; 
+}
+
+hr{
+    border: 8px solid navy; 
+   
+}
+/* ========= */
+
+.syntax-loop{
+    background-color: goldenrod;
+
+}
+
+.while-loop{
+    background-color: rgb(28, 154, 154);
+}
+
+.for-loop{
+    background-color: rgb(210, 133, 148);
+}
+
+.Break-continue{
+    background-color: rgb(87, 87, 168);
+    
+}
