@@ -9,17 +9,38 @@ body{
     background-color: darkgray;
     margin: 0;
 
-    width: 100%;
     overflow-x: hidden;
 }
 
-.div{
-    width: 100%;
-  
-}
+
 
 hr{
     border: 8px solid navy; 
    
 }
 /* ========= */
+
+.syntax{
+    background-color: goldenrod;
+    padding: 7px;
+}
+
+.Asynchronous{
+    background-color: rgb(46, 135, 135);
+    padding: 7px;
+}
+
+.http-request{
+    background-color: rgb(199, 142, 161);
+    padding: 7px;
+}
+
+.Manage-Asynchronous-code{
+    background-color: rgb(124, 124, 144);
+    padding: 7px;
+}
+
+.fetch{
+    background-color: rgb(203, 171, 91);
+    padding: 7px;
+}

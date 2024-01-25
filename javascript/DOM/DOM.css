@@ -9,17 +9,74 @@ body{
     background-color: darkgray;
     margin: 0;
 
-    width: 100%;
+    
     overflow-x: hidden;
 }
 
-.div{
-    width: 100%;
-  
-}
+
 
 hr{
     border: 8px solid navy; 
    
 }
 /* ========= */
+
+.DOM{
+    background-color: rgb(43, 174, 113);
+    padding: 7px;
+}
+
+.access-dom-element{
+
+    background-color:rgb(126, 126, 169) ;
+    padding: 7px;
+}
+
+
+.traverse{
+    background-color: pink;
+    padding: 7px;
+}
+
+.making-an-element-in-DOM{
+    background-color: burlywood;
+    padding: 7px;
+
+}
+
+.nested-elements{
+    background-color: rgb(218, 168, 75);
+    padding: 7px;
+}
+
+.replace-elements{
+    background-color: rgb(99, 120, 158);
+    padding: 7px;
+}
+
+
+.add-event-listener{
+    background-color: rgb(195, 141, 167);
+    padding: 7px;
+}
+
+.btn{
+    background-color: rgb(107, 109, 156);
+    padding: 7px;
+}
+
+
+.local-storage{
+    background-color: rgb(219, 133, 87);
+    padding: 7px;
+}
+
+.textarea-localstorage{
+    background-color: rgb(130, 109, 149);
+    padding: 7px;
+}
+
+.div-ex{
+    background-color: rgb(135, 194, 174);
+    padding: 7px;
+}

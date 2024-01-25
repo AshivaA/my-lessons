@@ -16,8 +16,8 @@
 <!-- =================================================================== -->
      <!-- bootstrap-navbar -->
            <!-- start-bootstrap navbar ========= -->
-           <nav class="navbar navbar-expand-lg bg-success" width: 100%;>
-            <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg bg-success" width: 100%;>
+            <div class="container-fluid"> 
       
               <!-- navbar logo/title/brand -->
               <a class="navbar-brand" href="#">Logo</a>
@@ -100,7 +100,7 @@
                 </ul>
               </div>
             </div>
-          </nav>
+          </nav> 
             <!-- end-bootstrap navbar ========= -->
            
             <!-- start-page-title -->
@@ -109,6 +109,214 @@
             <!-- end-page-title -->
 <!-- =================================================================== -->
 
+<div class="DOM">
+  <h5>-when we want to add javascript to html tags we should do that in dom. for example activate a button in html page.</h5>
+</div>
+<div class="access-dom-element">
+  <h5>access html tags in DOM:</h5>
+  <h6><strong>-we can access the html elements in DOM in 3 form:</strong> <br>
+    
+    (we have 2 ways to select an element by id/class/elements.) <br><br>
+   <strong>1- by tag name:</strong> <br>a-let example1=  <strong>document. getElementsByTagName("tagName");</strong><br>
+   b-let example1= <strong>document. querySelector("tagName");</strong><br><br>
+
+    <strong>2-by id: </strong> <br>a-let example1= <strong>document. getElementById("idName");</strong> <br>b-let example1=<strong>document. querySelector("#idName");</strong> 
+    
+    <strong><br><br> 3-by className:<br>a-let example1=<strong>document.
+    getElementsByClassName("className");</strong> <br>b-let example1= <strong>document. querySelector(".className");</strong> 
+    </strong> <br><br>- in document.querySelector, if we want to access all the elements with the same className or id or if we want to access one of the children we should use <br>let example1= document.querySelectorAll(".className");</strong><br>==============<br><br>
+
+  <!-- -Access an special element: -->
+    <strong>-Access an special element:</strong><br>
+      
+    -if we want to access one of the elements in li element, we should access it by index number. <br> ex:let lis= document.getElementsByTagName("li");<br> console.log(lis) =>HTMLCollection(4) [li.li-ex, li.li-ex, li.li-ex, li.li-ex] <br>console.log(lis[1]);=> second child( into li tags) <br><br>
+    
+    <strong> we can access an element in dom from (parents to child) or (child to parents)</strong><br><br>
+    <strong>-(parents to child): to select an special tag we should start counting from parents tag to children tags.</strong> <br>let forthChild= document.querySelectorAll(".div-ex li.li-ex")[3]; <br>console.log(forthChild);=> forth-child(into li tags) <br><br> explanation: (".div-ex li.li-ex")[3]=> <br>- .div-ex=(div className) <br>- li.li-ex=(li.li className) <br>- [3]=(index of forth child)
+  </h6>
+</div>
+
+<!-- traverse in DOM -->
+<div class="traverse">
+  <h6><strong>Traverse in DOM (parents to children):</strong><br>
+   
+    <!-- access parent tag -->
+    <br><strong>-access parent tag:</strong>
+    <br>let ulParents= document.querySelector("ul");
+    <br>console.log(ulParents);<br>
+    
+    <!-- access special children content -->
+    <br><strong>-access special children content:</strong>
+    <br>let Children= ulParents.children;
+    <br>console.log(Children[1].textContent);=> second-child <br>
+    
+    <!-- access first/last child/number of children -->
+    <br><strong>-access first/last child/number of children:</strong>
+    <br>let firstChild= ulParents.firstElementChild;
+    <br>let lastChild= ulParents.lastElementChild;
+    <br>let numberChildren= ulParents.childElementCount;<br>
+    
+    <br>console.log(firstChild);=> first-child(inside li tag)
+    <br>console.log(lastChild);=>  forth-child(inside li tag)
+    <br>console.log(numberChildren); => 4
+  </h6>
+</div>
+<!-- making an element in dom -->
+<div class="making-an-element-in-DOM">
+
+  <h5>Making an Element in DOM:</h5>
+  <h6><strong>-we can hover on an code if it shows( property we need to add = ( ex: id is a property)), if it shows (method we should only put ()  (ex: setAttribute is an method))</strong> <br><br>
+
+   1-<strong>makes element:</strong><br> let newElement=<strong>document.createElement("h4");</strong> <br><br>
+    
+    2-<strong>add className:(we should use className instead of class in DOM)</strong><br> newElement.className= "element-className";<br><br>
+    3- <strong>add id :</strong><br> newElement.id= "element-idName";<br> <br>
+    4-<strong>add attribute:(key:value)</strong> <br>newElement.setAttribute("attr-key","attr-value");<br><br>
+
+    5-<strong>make content:( we can make content for an element in 2 ways:)</strong><br><br>
+    <strong>a-innerHtml:</strong> newElement.innerHTML= "1-making new content using innerHtml";<br>
+     <strong>b-appendChild:</strong><br> newElement.appendChild (document.createTextNode ("2-making new content using appendChild "));<br><br>
+    
+    console.log(newElement);</h6>
+</div>
+
+
+<!-- nested elements -->
+<div class="nested-elements">
+
+  <h5> <strong>make nested elements:</strong><br>-we can make an element inside another in 2 ways: </h5><br>
+
+ 
+  <h6> <strong>1-Using-appendChild:</strong> <br><strong>-we use appendChild:<br> 1- when we want to create an element inside another element (ex: making < h5>< /h5> inside a < div>< /div> )<br>  2- when we want to make content for an element (ex:put text inside hFive) </strong> <br><br>
+
+     <strong>-make div:</strong> <br>let Div= document.createElement("div"); <br>
+     <strong>-make hFive:</strong> let hFive= document.createElement("h5");<br>
+    <strong>-put hFive inside div:</strong><br> Div.appendChild(hFive); <br>
+     <strong>-put content inside hFive:</strong><br> hFive.appendChild(document.createTextNode("this content made by appendChild and createTextNode")); <br><br>
+    
+    console.log(Div);</h6><br>
+
+    <h6><strong>2-using innerHTML:</strong><strong> <br>-make div: <br></strong> let divHtml= document.createElement("div") <br><br>
+      <strong>-make content for innerHtml inside backtick:</strong>
+      <br>divHtml.innerHTML=` <br>
+      < h5>this content made by innerHtml< /h5> <br>`
+       <br><br>
+      console.log(divHtml);</h6>
+</div>
+
+<!-- replace element -->
+<div class="replace-elements">
+
+  <h6><strong>Replace elements: </strong> <br><br>
+  
+   <strong>1-select parents element:</strong> <br>let ULParents= document.querySelector("#ul-ex");<br><br>
+
+    <strong>2-make new element you want to replace:</strong> <br>let replaceCH= document.createElement("li");
+    <br>replaceCH.className= "li-ex";
+    <br>replaceCH.textContent="this is replaced child";
+    <br>ULParents.appendChild(replaceCH);<br><br>
+    
+     <strong>3-select elements you want to replace it:</strong> <br>let thirdCh= document.querySelectorAll(".div-ex li.li-ex")[2]; <br><br>
+    
+     <strong>4-replace new element:</strong><br>ULParents.replaceChild(replaceCH, thirdCh);<br>
+     <strong>explanation:(replaceCH, thirdCh)=(new element, old element) </strong>
+  </h6>
+</div>
+
+<!-- addEventListener -->
+<div class="add-event-listener">
+  <h5>addEventListener:</h5>
+  <h6><strong>1-access the button element:</strong> <br>let button= document.querySelector(".btn");<br><br>
+
+    <strong>2-add addEventListener to button element:</strong><br>button.addEventListener("click",showText);<br>
+    (explanation: showText is a functionName)<br>
+    <strong style="color: darkred;">important:</strong><br>we should never put () in front of addEventListener functionName because when ever we put ( )in front of a functionName it means that execute exactly right now not ofter click. <br><br>
+    
+    <strong>3-addEventListener function:</strong> <br>function showText(event) {
+       <br> event.preventDefault
+       <br> button.textContent="new button";
+       <br>console.log("this is a new button");<br>} <br><br>
+        
+    explanation: event.preventDefault( can prevent the default element behavior in javascript.)
+  </h6>
+</div>
+
+<!-- local-storage -->
+<div class="local-storage">
+
+  <h5>local storage: <br>(local storage use to save data in browser.)</h5>
+  <h6 style="color: darkred;"><strong>important: <br>-we can only save the data in local storage in string.</strong></h6>
+
+  <h6><strong>-access the local storage in inspect: <br></strong>Application-> local storage-> open it -> go to http:---</h6>=======<br>
+  <!-- making local storage -->
+  <h6><strong>-making local storage:</strong><br>
+     <strong>1-set key, value to access data:</strong><br>localStorage.setItem("myKey", "myValue");<br><br>
+  <strong>2-store data in a variable and access the values by the key:</strong><br>let storData= localStorage.getItem("myKey");<br><br>
+  console.log(storData);<br>=======<br>
+  </h6>
+  <!-- remove data from local storage -->
+<h6><strong>-remove special data from local storage:</strong>
+  <br>localStorage.setItem("shiva","khandel");
+  <br>localStorage.setItem("ahoora","barana");
+
+<br><br>let shivaName= localStorage.getItem("shiva");
+<br><br>localStorage.removeItem("shiva");=> shiva khandel will remove. <br><br>
+
+<strong>-remove all data from local storage:</strong><br>
+localStorage.clear();=> all local storage data will remove.
+<br>=======<br>
+</h6>
+
+<h6><strong>-Saving an array in local storage: <br>(we should only put the key in string and not arrayName)</strong> <br><br>
+  
+<strong>1-create an array:</strong><br>let myArray= [1,2,3,4];<br><br>
+<strong>2-create "key",value(arrayName) :</strong> <br>localStorage.setItem("arr",myArray);<br><br>
+ <strong>3-store array in a variable:</strong><br>let storArray= localStorage.getItem("arr").split(","); <br><br>
+
+console.log(storArray);=> (4) ['1', '2', '3', '4'] <br>
+Application=> 1,2,3,4 (this is not a string)
+<br>===========<br>
+</h6>
+
+<h6><strong>-Saving an object in local storage: <br>to store an object we should: <br> <br>first: convert object to string by: <br> localStorage.setItem("key", JSON.stringify(objectName)) <br><br>then: convert string to object by: <br> JSON.parse(localStorage.getItem("key"))</strong><br><br>
+
+   <strong>1-make an object:</strong> <br>let myObject= {
+    <br>name: "shiva",
+    <br>age: 38<br> } <br><br>
+
+ <strong>2-convert object to string:</strong><br>localStorage.setItem("obj", JSON.stringify(myObject));<br><br>
+
+ <strong>3-convert string to object and store object:</strong> <br>let storeObject= JSON.parse(localStorage.getItem("obj"));<br><br>
+
+console.log(storeObject);=> {name: 'shiva', age: 38} <br>
+Application=> {"name":"shiva","age":38} (shows as a string)
+
+</h6>
+
+</div>
+
+<div class="textarea-localstorage">
+
+  <h5>function to save textarea note in localStorage: <br>-to activate local storage we need to use it in a function by a button.</h5>
+  <h6><strong>ex: function to save textarea note for 09am:</strong>
+    <br><br>$(".Btn09").on("click",save09);
+    <br><br>function save09(event) { 
+      <br> event.preventDefault();
+    
+      <br> var textareaNote09 = $(".note09").val();
+      <br>localStorage.setItem("Note for 09am:", textareaNote09 );
+      <br> }
+      
+      <br><br>var storage09 = localStorage.getItem("Note for 09am:");
+      <br>if (storage09) {
+        <br> $(".note09").val(storage09);
+        <br>}
+        <br><br><strong>description:</strong>
+        <br>$(".Btn09")=>specific button for 9am 
+        <br>$(".note09")=>specific textarea for 9am
+        <br>if (storage09)=> if (storage09) was true then...
+      </h6>
+</div>
 
 
 
@@ -119,16 +327,29 @@
 
 
 
+<div class="div-ex">
+
+<h5>DOM.JS file examples:</h5>
+<h6>
+
+  <ul id="ul-ex">
+    <li class="li-ex">first-child</li>
+    <li class="li-ex">second-child</li>
+    <li class="li-ex">third-child</li>
+    <li class="li-ex">forth-child</li>
+
+  </ul>
+
+</h6>
+
+<button  type= "button" class="btn">button</button>
 
 
 
 
 
 
-
-
-
-
+</div>
 
 
 <!-- start-links================================================== -->

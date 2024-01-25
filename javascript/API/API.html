@@ -108,11 +108,233 @@
             <br>
             <!-- end-page-title -->
 <!-- =================================================================== -->
+<!-- syntax -->
+<div class="syntax">
+  <h5>syntax:</h5>
+
+  <!-- callback syntax -->
+  <h6><strong>callback function:</strong>
+    <br>function firstFunc(Func){
+      <br>Func();
+      <br>}
+      <br><br>function secondFunc(){
+      <br> console.log("this is callback function ");
+      <br>}
+      <br><br>firstFunc(secondFunc); <br></h6>----------
+
+  <!-- promise syntax -->
+      <h6><strong>promise:</strong>
+        <br><strong>const welcome = new Promise(function (resolve, reject) </strong>{
+          <br>setTimeout(() => {
+            <br> var a="v"
+            <br>var b="b"
+           <br> <br>if (a==b) { 
+            <br><strong>resolve();</strong>   
+            <br>}else{
+            <br> <strong>reject();</strong>
+            <br><br>} 
+           
+            <br>}, 4000);
+            <br>});
+      
+            <br> <br><strong>welcome.then(function () </strong>{
+            <br>console.log("call resolve (correct!)");
+            <br>});
+    
+            <br> <br> <strong>welcome.catch(function ()</strong> {
+            <br>console.log("call reject (error!)");
+            <br>});
+      </h6>----------
+
+  <!-- fetch syntax -->
+      <h6><strong>fetch:</strong>
+      
+       <br><strong>fetch(URL)</strong>
+
+       <br><strong> <br>.then(function(response) {
+          <br>return response.json();
+       <br> })  </strong>
+       
+      <br><strong><br>.then(function(data) {
+        <br>console.log(data);
+        <br>( we should write the code here)
+        <br>})</strong>
+        
+       <br><strong> <br>.catch(function (error) {
+          <br>console.log( `errrrorrr! ${error}`);   
+          <br>})</strong>
+      </h6>----------
+
+</div>
+
+<div class="Asynchronous">
+<!-- Synchronous: -->
+  <h5>-Synchronous: <br><strong>meaning:</strong> start now, use it at the same time.</h5>
+  <h6>-in java script codes(statement) executes line by line and that means code is Synchronous. <br><br>
+    <strong>-description: <br>statements:</strong> In JavaScript, statements are instructions that are executed by the browser or Node. js <br>ex: variables, functions, if, loop, console.log()
+  </h6>---------
+<!-- -Asynchronous: -->
+  <h5>-Asynchronous: <br><strong>meaning:</strong> start now, use it when it finished.</h5>
+  
+  <h6>-in java script some codes(statement) need mor time to finish(ex:3 second) and then execute, that means code is Asynchronous. <br><br>-so if we want to execute a code without wasting the time to execute we need to use Asynchronous function.  <br><br><strong>ex: setTimeout(function, time)</strong><br> is an Asynchronous function that means execute this function after passing this special time. <br>
+    <br>setTimeout(() => {
+      <br>console.log("shows HELLO after three second");  
+      <br>}, 3000);
+
+  </h6>-------
+<!---Web API:  -->
+  <h5>-Web API: </h5>
+  <h6>the time that an Asynchronous code needs to finish and then execute happen in another place(web page) outside of your code, called API.</h6>------
+ <!-- -Callback function: -->
+<h5>-Callback function: <br> <strong>meaning:</strong> when that time is finished then the result shows as a callback function.</h5>
+  
+</div>
+
+<!--http-request:  -->
+<div class="http-request">
+  <h5>http-request:</h5>
+  <h6>-when we need to (get/ post/ put/ delete) information from server we need to use http request.
+    <br>-get(means: receive)
+    <br>-post(means: send)
+    <br>-put(means: chang)
+    <br>-delete(means: remove) <br> 
+  </h6>
+  <!-- API -->
+  <h6><strong>-API: is a connection between your system and central system</strong><br></h6>
+  <!--API key:  -->
+  <h6><strong>-API key:</strong> is a line of code that you can get it from a server to send them a request and then they send an API KEY to your Email then you can copy it and use it. <br>ex: var ApiKey = "abcdefgh12345"; </h6>
+<!-- -Access JSON objects from API and URL: -->
+  <h6><strong>-Access JSON objects from API and URL: </strong><br><br>
+
+    var ApiKey = "0b14bd9f90173719c5c03461e31ad0ac";
+    <br>var queryURL = "http://api.openweathermap.org/geo/1.0/direct?q=London&limit=5&appid="+ApiKey;
+
+   <br><br>console.log(queryURL);
+  </h6>--------
+<!--  -URL(API Endpoint):-->
+  <h6><strong>-URL(API Endpoint): is the place where the Source codes are in. </strong><br>ex: https://www.imdb.com/ </h6>
+
+  <h6><strong>example:</strong>
+
+    <br>var ApiKey = "abcdefgh12345";
+    <br>var cityName="paris";
+    <br>var URL= "https://api.openweathermap.org/data/2.5/weather?q="<strong>+cityName</strong>+"&appid="<strong>+ApiKey</strong>;<br><br> 
+
+    <strong>definition: <br>1- (main path)  <br> "https://api.openweathermap.org/data/2.5/weather <br><br>2- ? (start query string) <br><br>3- (key)(key:value one)<br> q="+cityName<br><br>4- &( separate tow set of key:values each other) <br><br>5- (api key)(key:value tow) <br> "appid="+ApiKey; </strong>
+
+  </h6>
+</div>
+<!--  Manage-Asynchronous-code-->
+<div class="Manage-Asynchronous-code">
+  <h5>Manage Asynchronous code:</h5>
+  <h6>-callback function and promise object use to manage Asynchronous code which means:
+    <br>-in normal calling Asynchronous code, the Asynchronous code will execute randomly if we do not manage them. so to manage them in what order and when the Asynchronous code to execute we need to use callback function or promise object.
+  </h6><br>
+
+<!-- callback function -->
+  <h5>callback function:</h5>
+  <h6>-when we use a function as an argument in another function, the argument function is callback function. <br><br>
+  
+
+      <strong>comparison:</strong><br><br><strong>ex 1:(normal calling function with setTimeout)</strong>
+      <br>function Func1(){
+        <br>setTimeout(function (){
+          <br>console.log <strong>("the first function execute after second function");</strong> 
+          <br> },1000);
+          <br>} 
+          <br><br>function Func2(){ 
+            <br>console.log <strong>("the second function execute first "); </strong>
+            <br>} 
+           <strong><br><br>Func1();
+            <br>Func2();</strong> 
+
+            <br><br><strong>ex 2:(callback function with setTimeout)</strong>
+            <br>function Func1(Func){
+              <br> setTimeout(function (){ 
+                <br>console.log <strong>("the first function execute first.");</strong>
+                <br>Func();
+                <br>},3000);
+                <br>} 
+                <br><br>function Func2(){ 
+                  <br> console.log <strong>("the second function execute second.");</strong>
+                 
+                  <br>} 
+                  <br><br> <strong>Func1(Func2)</strong>
+                   <br>(Func2)=> is a callback function.
+<!-- callback hell -->
+    <br><br><strong>callback hell:</strong> <br>-when we use several  call back function into one function it calls callback hell.</h6>----------
+
+
+<!--  promise:-->
+  <h6> <strong>promise: <br></strong>-promise is an object to check if the code is true or false (resolve or reject) and also use to manage Asynchronous code. <br>in promise we should use: <br>
+  
+  <br>1- <strong>const welcome = new Promise(function (resolve, reject){})</strong>
+
+  <br>console.log(welcome);=> Promise {}
+  <br><br>2- <strong>resolve</strong> work with (.then) which means that code is working. <br>-the first action after Asynchronous code is finished should call by (.then). 
+  <br><strong>welcome.then(function () </strong>{
+    <br>console.log("call resolve (correct!)");
+    <br>});
+    <br><br>3- <strong>reject</strong> works with (.catch) which means that code have an error! 
+    <br><strong>welcome.catch(function ()</strong> {
+      <br>console.log("call reject (error!)");
+      <br>});
+  
+  </h6><br>
+  <h6> <strong>ex:</strong>
+       <br><strong>const welcome = new Promise(function (resolve, reject) </strong>{
+       <br>setTimeout(() => {
+        <br> var a="v"
+        <br>var b="b"
+        <br> <br>if (a==b) { 
+        <br><strong>resolve();</strong>   
+        <br>}else{
+        <br> <strong>reject();</strong>
+        <br><br>} 
+       
+        <br>}, 4000);
+        <br>});
+  
+        <br> <br><strong>welcome.then(function () </strong>{
+        <br>console.log("call resolve (correct!)");
+        <br>});
+
+        <br> <br> <strong>welcome.catch(function ()</strong> {
+        <br>console.log("call reject (error!)");
+        <br>});
+ 
+  </h6>
+
+</div>
+<!-- fetch -->
+<div class="fetch">
+  <h5>fetch:</h5>
+  <h6>-fetch is a kind of promise that use to send URL to server.</h6>
+
+  <h6><strong>-to fetch an URL we need to do:</strong>
+  <br><br><strong>1- fetch(URL)</strong>
+
+    <br><br><strong>2- receive the server response with JSON format : <br>we always need to use word (response).  </strong>
+    <br>.then(function(response) {
+    <br>return response.json();
+    <br> })
+
+    <br><br><strong>3- receive JSON data in your local code: <br>
+   ( we should write the code here) </strong>
+    <br>.then(function(data) {
+    <br>console.log(data);
+    <br>})
+
+    <br><br><strong>4- set a function to get errors:</strong>
+    <br>.catch(function (error) {
+    <br>console.log( `errrrorrr! ${error}`);   
+    <br>}) <br>
+  
+  </h6>
 
 
 
-
-
+</div>
 
 
 
