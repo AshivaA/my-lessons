@@ -11,9 +11,14 @@
     <!-- css style for page -->
     <style>
 
-      body{
-        margin: 10px;
-      }
+body{
+    background-color: darkgray;
+    margin: 0;
+   
+
+    /* width: 100%; */
+    overflow-x: hidden;
+}
         #header{
             text-align: center;
             background-color: aquamarine;
@@ -22,23 +27,27 @@
             background-color: darkcyan;
             text-align: right;
             list-style: none;
+            padding: 7px;
             
         }
         #ul-navbar{
             display: inline-flex;
-            list-style: none;   
+            list-style: none;
+               
         }
         #li-nav{
             margin: 10px;
         }
         #section{
             background-color: rgb(61, 65, 63);
-            color: aliceblue;  
+            color: aliceblue; 
+            padding: 7px; 
         }
 
         #article{
             background-color: antiquewhite;
             color: black;
+            padding: 15px;
         }
         #aside{
             background-color:lightblue
@@ -87,6 +96,10 @@
     
                   <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="/css learning/flexbox-lessons/flxbox.html" target="_blank">css-flexbox</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/css learning/flexbox-lessons/flexproject/flexproject.html" target="_blank">flex-project</a>
                   </li>
     
                   <li class="nav-item">
@@ -157,7 +170,7 @@
         <h1>header</h1>
         <a href="index.html">go to another page</a>
     </header>
-    <br>
+    
     <!-- ================== -->
     <nav id="navbar" >
         <ul id="ul-navbar">
@@ -197,7 +210,7 @@
     </footer>
 
      <!-- div margin-top can make extra space at the end of the page -->
-  <div style="margin-top: 300px"></div>  
+  <div style="margin-top: 200px"></div>  
 
 
     <!-- bootstrap-script start -->

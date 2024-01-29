@@ -3,276 +3,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML ME</title>
-
-      <!-- bootstrap-css--link -->
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-     
-<!-- style form ===========-->
-    <style>
-
-      body{
-        margin: 15px;
-      }
-        .form{
-            padding: 20px;
-            margin: 10px; 
-        }
-        .form input{
-            margin-bottom: 20px;
-            padding: 5px;
-            
-        }
-
-        .form input[type="text"] {
-            /* only change the wide for inputs with type text */
-            width:100%
-        }
-
-        .form textarea{
-            width: 100%;
-        }
-
-        .form label{
-            display: block;
-        }
-
-    </style>
-<!-- ================== -->
+    <title>main-page</title>
+    <!-- bootstrap-css--link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- local-css-link -->
+    <link rel="stylesheet" href="flexproject.css">
 </head>
-<!--  START BODY================================== -->
 <body>
 
-<!-- =================================================================== -->
-    <!-- bootstrap-navbar -->
-           <!-- start-bootstrap navbar ========= -->
-           <nav class="navbar navbar-expand-lg bg-success">
-            <div class="container-fluid">
-      
-              <!-- navbar logo/title/brand -->
-              <a class="navbar-brand" href="#">main navbar</a>
-      
-              <!-- hamburger-menu-button -->
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-      
-              <!-- to move hamburger-menu-items to the right side we need to add justify-content-end to collapse navbar.-->
-              <div class="collapse navbar-collapse justify-content-end " id="navbarNav">
-      
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="/html-learning/index.html" target="_blank">html-form</a>
-                  </li>
-    
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="/html-learning/semantic.html" target="_blank">html-semantic</a>
-                  </li>
-    
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="/css learning/css/csslearning.html" target="_blank">css-learning</a>
-                  </li>
-    
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="/css learning/flexbox-lessons/flxbox.html" target="_blank">css-flexbox</a>
-                  </li>
-    
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="/css learning/media-query/mediaquery.html" target="_blank">mediaquery</a>
-                  </li>
-    
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="/css learning/css-grid/grid.html" target="_blank">css-grid</a>
-                  </li>
-    
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="/css learning/css-position/position.html" target="_blank">css-position</a>
-                  </li>
-    
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="/css learning/bootstrap/bootstrap.html" target="_blank">bootstrap</a>
-                  </li>
-
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="/javascript/js-lessons/javascript-lessons.html" target="_blank">javascript-lessons</a>
-                  </li>
-
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="/javascript/if-condition/if-condition.html" target="_blank">if/operation</a>
-                  </li>
-
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="/javascript/for-while-loop/for-while-loop.html" target="_blank">for/while loop</a>
-                  </li>
-
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="/javascript/array/array.html" target="_blank"> array</a>
-                  </li>
-
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="/javascript/function/function.html" target="_blank"> function</a>
-                  </li>
-
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="/javascript/object/object.html" target="_blank"> object</a>
-                  </li>
-
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="/javascript/DOM/DOM.html" target="_blank">DOM</a>
-                  </li>
-
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="/javascript/API/API.html" target="_blank">API</a>
-                  </li>
-    
-    
-                  
-                </ul>
-              </div>
-            </div>
-          </nav>
-            <!-- end-bootstrap navbar ========= -->
-
-             <!-- start-page-title -->
-             <h1 style="background-color: burlywood;">html-form-page</h1>
-             <br>
-             <!-- end-page-title -->
-<!-- =================================================================== -->
-
-
-
-
-    <h2>links open to other page:</h2>
-    <a href="semantic.html">go to other page</a>
-    <hr>
-    <!-- ======================================= -->
-    <h1>heading one</h1>
-    <h2>heading tow</h2>
-    <h3>heading three</h3>
-    <h4>heading four</h4>
-    <h5>heading five</h5>
-    <h6>heading six</h6>
-    <!-- br makes space/ hr makes line -->
-    <br>
-    <hr>
-
-    <!-- INLINE TAGS================================ -->
-    <h2>bold,Italic,links(open the same or other page): </h2>
-    <p>
-        <strong>LOREM(bold)</strong>
-         <br>
-         <em>ELIT(italic)</em>.
-         <br> 
-         <a href="http://google.com">MOLITIA(link will open in the same page) </a>
-        <br> 
-        <a href="http://google.com" target="_blank">PARIATURE(link will open in new page) </a> 
-         <br>
-          Vero minima ad fuga at corporis explicabo, culpa molestiae, quam itaque ipsa voluptatem. Totam, corrupti qui!
-    </p>
-    <br>
-    <hr>
-
-    <!-- LISTS========================================== -->
-    <h2>lists:</h2>
-    <ul>
-        <li>unordered list one</li>
-        <li>unordered list tow</li>
-    </ul>
-
-    <ol>
-        <li>order list one</li>
-        <li>order list tow</li>
-    </ol>
-    <br>
-    <hr>
-
-    <!-- TABLE================================== -->
-    <h2>table:</h2>
-  <table>
-    <thead>
-        <tr>
-            <th>(table) NAME</th>
-            <th>(table) EMAIL</th>
-
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Shiva</td>
-            <td>Shiva@gmail.com</td>
-        </tr>
-        <tr>
-            <td>Amin</td>
-            <td>Amin@gmail.com</td>
-        </tr>
-    </tbody>
-  </table>
-  <br>
-  <hr>
-
-  <!-- START FORM============================== -->
-  <h2>form:</h2>
-  <form class="form">
-    <!-- name -->
-    <div>
-        <label>first name:( .form lable display:block placed labels on top of input)</label>
-        <input type="text" placeholder="enter your name">
-    </div>
-    <!-- <br> -->
-    <div>
-        <label>last name:</label>
-        <input type="text" placeholder="enter your last name">
-    </div>
-    <!-- <br> -->
-    <!-- massage -->
-    <div>
-        <label>massage:</label>
-        <textarea name="" id="" cols="30" rows="4"></textarea>
-    </div>
-    <!-- <br> -->
-    <!-- gender -->
-    <div>
-        <label>gender:</label>
-        <select>
-            <option>male</option>
-            <option>female</option>
-        </select>
-    </div>
-    <!-- <br> -->
-    <!-- age -->
-    <div>
-        <label>age:</label>
-        <input type="number" placeholder="5-100" min="5" max="100">
-    </div>
-    <!-- <br> -->
-    <!-- birthday -->
-    <div>
-        <label>birthday:</label>
-        <input type="date">
-    </div>
-    <!-- <br> -->
-    <!-- submit -->
-    <button>submit</button>
-  </form>
-  <br>
-<hr>
-  <!-- END FORM=============================== -->
-
-<!-- imag================================== -->
-<h2>image:</h2>
-<a href="images/Spring-desk.webp">
-    <img src="../images/Spring-desk.webp" alt="coffee" width="200px" height="150px">
-</a>
-<br>
-<hr>
-
-  <!-- div margin-top can make extra space at the end of the page -->
-  <div style="margin-top: 500px"></div> 
-  
 <!-- =================================================================== -->  
-    <!-- bootstrap-script start -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <!-- bootstrap-script end -->
-<!-- =================================================================== -->    
+            <!-- bootstrap-navbar -->
+           <!-- start-bootstrap navbar ========= -->
+    <nav class="navbar navbar-expand-lg bg-success">
+        <div class="container-fluid">
+  
+          <!-- navbar logo/title/brand -->
+          <a class="navbar-brand" href="#">Logo</a>
+  
+          <!-- hamburger-menu-button -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+  
+          <!-- to move hamburger-menu-items to the right side we need to add justify-content-end to collapse navbar.-->
+          <div class="collapse navbar-collapse justify-content-end " id="navbarNav">
+  
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/html-learning/index.html" target="_blank">html-form</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/html-learning/semantic.html" target="_blank">html-semantic</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/css learning/css/csslearning.html" target="_blank">css-learning</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/css learning/flexbox-lessons/flxbox.html" target="_blank">css-flexbox</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/css learning/flexbox-lessons/flexproject/flexproject.html" target="_blank">flex-project</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/css learning/media-query/mediaquery.html" target="_blank">mediaquery</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/css learning/css-grid/grid.html" target="_blank">css-grid</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/css learning/css-position/position.html" target="_blank">css-position</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/css learning/bootstrap/bootstrap.html" target="_blank">bootstrap</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/javascript/js-lessons/javascript-lessons.html" target="_blank">javascript-lessons</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/javascript/if-condition/if-condition.html" target="_blank">if/operation</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/javascript/for-while-loop/for-while-loop.html" target="_blank">for/while loop</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/javascript/array/array.html" target="_blank"> array</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/javascript/function/function.html" target="_blank"> function</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/javascript/object/object.html" target="_blank"> object</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/javascript/DOM/DOM.html" target="_blank">DOM</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/javascript/API/API.html" target="_blank">API</a>
+              </li>
+
+
+              
+            </ul>
+          </div>
+        </div>
+      </nav>
+        <!-- end-bootstrap navbar ========= -->
+
+           <!--start-page-title  -->
+        <h1 style="background-color: burlywood;">main-page</h1>
+        <br>
+           <!--end-page-title  -->
+<!-- =================================================================== -->
+
+
+
+
+
+
+ <!-- bootstrap-script start -->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+ <!-- bootstrap-script end -->
 </body>
 </html>
